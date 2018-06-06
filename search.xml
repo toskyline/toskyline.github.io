@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[MySQL重置和权限设置]]></title>
-      <url>/Blog/2018/05/30/mysql/</url>
+      <url>/2018/05/30/mysql/</url>
       <content type="html"><![CDATA[<p>##重置密码</p>
 <ol>
 <li><p>关闭MySQL服务</p>
@@ -42,7 +42,7 @@
     
     <entry>
       <title></title>
-      <url>/Blog/2018/02/05/%E8%85%BE%E8%AE%AF%E7%9B%B4%E6%92%AD/</url>
+      <url>/2018/02/05/%E8%85%BE%E8%AE%AF%E7%9B%B4%E6%92%AD/</url>
       <content type="html"><![CDATA[<p>最近公司弄了一个在线娃娃机项目，用到了腾讯直播，期间遇到了许多问题，再次记录一下。<br>腾讯云的直播产品非常多，文档也比较全，但是最大的问题是相互依赖，你可能要解决一个问题，要从直播找起，然后点播，然后互动直播，有点乱，再次整理一下。</p>
 <p>##名词解释：</p>
 <p>###直播码：</p>
@@ -79,7 +79,7 @@
     
     <entry>
       <title></title>
-      <url>/Blog/2017/10/12/android%20api/</url>
+      <url>/2017/10/12/android%20api/</url>
       <content type="html"><![CDATA[<h2 id="Android-简介"><a href="#Android-简介" class="headerlink" title="Android 简介"></a>Android 简介</h2><p><a href="https://developer.android.google.cn/guide/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/index.html</a></p>
 <h2 id="应用基础知识"><a href="#应用基础知识" class="headerlink" title="应用基础知识"></a>应用基础知识</h2><p><a href="https://developer.android.google.cn/guide/components/fundamentals.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/fundamentals.html</a></p>
 <h2 id="设备兼容性-Device-Compatibility"><a href="#设备兼容性-Device-Compatibility" class="headerlink" title="设备兼容性 Device Compatibility"></a>设备兼容性 Device Compatibility</h2><p><a href="https://developer.android.google.cn/guide/practices/compatibility.html" target="_blank" rel="external">https://developer.android.google.cn/guide/practices/compatibility.html</a></p>
@@ -233,7 +233,7 @@
     
     <entry>
       <title></title>
-      <url>/Blog/2017/10/11/%E8%8E%B7%E5%8F%96%E5%B7%B2%E5%AE%89%E8%A3%85APP%E7%9A%84apk%E6%96%87%E4%BB%B6/</url>
+      <url>/2017/10/11/%E8%8E%B7%E5%8F%96%E5%B7%B2%E5%AE%89%E8%A3%85APP%E7%9A%84apk%E6%96%87%E4%BB%B6/</url>
       <content type="html"><![CDATA[<p>###获取程序包名<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">adb shell pm list packages</div></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ adb shell pm list packages</div><div class="line">package:android</div><div class="line">package:cn.wps.moffice</div><div class="line">package:com.android.backupconfirm</div><div class="line">package:com.android.bluetooth</div><div class="line">package:com.android.browser</div><div class="line">package:com.android.calculator2</div><div class="line">package:com.android.camera</div><div class="line">package:com.android.certinstaller</div><div class="line">package:com.android.contacts</div></pre></td></tr></table></figure>
 <p>###找到apk的位置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">adb shell pm path com.tence01.mm</div></pre></td></tr></table></figure></p>
@@ -246,7 +246,7 @@
     
     <entry>
       <title><![CDATA[Android开发问题收集]]></title>
-      <url>/Blog/2017/07/26/Android%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</url>
+      <url>/2017/07/26/Android%E5%BC%80%E5%8F%91%E9%97%AE%E9%A2%98%E6%94%B6%E9%9B%86/</url>
       <content type="html"><![CDATA[<h3 id="The-APK-file-does-not-exist-on-disk-Error-while-Installing-APK"><a href="#The-APK-file-does-not-exist-on-disk-Error-while-Installing-APK" class="headerlink" title="The APK file  does not exist on disk. Error while Installing APK"></a>The APK file  does not exist on disk. Error while Installing APK</h3><blockquote>
 <p>清楚缓存 </p>
 </blockquote>
@@ -271,7 +271,7 @@
     
     <entry>
       <title><![CDATA[Material简单使用]]></title>
-      <url>/Blog/2017/07/21/Material%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</url>
+      <url>/2017/07/21/Material%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<p>首先介绍下Android的各个位置的名称：<br><img src="https://developer.android.com/training/material/images/ThemeColors.png" alt="Android 谷歌md规范"></p>
 <p>可以看到，最上面的是状态栏，最下面的是导航栏。<br>如果您想为状态栏设置颜色，你可以通过制定android:statusBarColor来定义状态栏颜色，默认情况下，Android：statusBarColor的颜色继承Android：colorPrimaryDark.</p>
 <p>   您也可自行将状态栏移到后侧。例如，您想在一个照片上以透明的方式显示状态栏，同时利用细微的深色渐变以确保白色状态图标仍保持可见。 如果要执行此操作，请将 android:statusBarColor 属性设置为 @android:color/transparent 并根据需要调整窗口标志。您也可以使用 Window.setStatusBarColor() 方法进行动画或淡出设置。</p>
@@ -291,7 +291,7 @@
     
     <entry>
       <title><![CDATA[AndroidStudio常用的mac快捷键]]></title>
-      <url>/Blog/2017/07/18/AndroidStudio%E5%B8%B8%E7%94%A8%E7%9A%84mac%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+      <url>/2017/07/18/AndroidStudio%E5%B8%B8%E7%94%A8%E7%9A%84mac%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
       <content type="html"></content>
       
         
@@ -299,7 +299,7 @@
     
     <entry>
       <title><![CDATA[Studio减小APK体积]]></title>
-      <url>/Blog/2017/07/18/Android%20Studio%E5%87%8F%E5%B0%8FAPK%E4%BD%93%E7%A7%AF/</url>
+      <url>/2017/07/18/Android%20Studio%E5%87%8F%E5%B0%8FAPK%E4%BD%93%E7%A7%AF/</url>
       <content type="html"><![CDATA[<h2 id="1-ProGuard"><a href="#1-ProGuard" class="headerlink" title="1. ProGuard"></a>1. ProGuard</h2><p>Proguard可以删除无效的Java code来减小apk的体积</p>
 <h2 id="2-Split-Apk"><a href="#2-Split-Apk" class="headerlink" title="2. Split Apk"></a>2. Split Apk</h2><p><a href="https://developer.android.com/studio/build/configure-apk-splits.html" target="_blank" rel="external">Split Apk</a>谷歌官方支持的，可以为根据设备密度和ABI创建特定的Apk包，大大减少每个apk的体积。</p>
 <h2 id="3-ReDex"><a href="#3-ReDex" class="headerlink" title="3. ReDex"></a>3. ReDex</h2><p>Facebook开源维护的，压缩代码的同时，还可以提高性能</p>
@@ -320,7 +320,7 @@
     
     <entry>
       <title><![CDATA[Studio常用技巧]]></title>
-      <url>/Blog/2017/07/18/Android%20Studio%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
+      <url>/2017/07/18/Android%20Studio%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
       <content type="html"><![CDATA[<h2 id="tools-attribute"><a href="#tools-attribute" class="headerlink" title="tools:attribute"></a>tools:attribute</h2><p>如果你想查看布局的文字效果，但是有不想运行ed时候显示出来，你就可以通过’tools:something=”value”‘来实现，你要做的只有两点</p>
 <ol>
 <li>在根布局中添加xmlns:tools=”<a href="http://schemas.android.com/tools" target="_blank" rel="external">http://schemas.android.com/tools</a>“</li>
@@ -339,7 +339,7 @@
     
     <entry>
       <title><![CDATA[Gradle实践]]></title>
-      <url>/Blog/2017/07/06/Gradle%E5%AE%9E%E8%B7%B5/</url>
+      <url>/2017/07/06/Gradle%E5%AE%9E%E8%B7%B5/</url>
       <content type="html"><![CDATA[<h1 id="gradle-task示例"><a href="#gradle-task示例" class="headerlink" title="gradle task示例"></a>gradle task示例</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">task compile &lt;&lt; &#123;</div><div class="line">    println <span class="string">"Compiled"</span></div><div class="line">&#125;</div><div class="line">task clean &lt;&lt; &#123;</div><div class="line">    println <span class="string">"Clean"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="task之间相互依赖"><a href="#task之间相互依赖" class="headerlink" title="task之间相互依赖"></a>task之间相互依赖</h3><blockquote>
 <p>compile.dependsOn  clean</p>
@@ -392,7 +392,7 @@
     
     <entry>
       <title><![CDATA[DL插件化实践]]></title>
-      <url>/Blog/2017/07/05/DL%E6%8F%92%E4%BB%B6%E5%8C%96%E5%AE%9E%E8%B7%B5/</url>
+      <url>/2017/07/05/DL%E6%8F%92%E4%BB%B6%E5%8C%96%E5%AE%9E%E8%B7%B5/</url>
       <content type="html"></content>
       
         <categories>
@@ -414,7 +414,7 @@
     
     <entry>
       <title><![CDATA[Android反编译]]></title>
-      <url>/Blog/2017/04/06/Android%E5%8F%8D%E7%BC%96%E8%AF%91/</url>
+      <url>/2017/04/06/Android%E5%8F%8D%E7%BC%96%E8%AF%91/</url>
       <content type="html"><![CDATA[<p>工欲善其事必先利其器，反编译apk，首先我们需要必须的工具</p>
 <blockquote>
 <ul>
@@ -461,7 +461,7 @@
     
     <entry>
       <title><![CDATA[Retrofit的简单封装]]></title>
-      <url>/Blog/2017/03/20/retrofit/</url>
+      <url>/2017/03/20/retrofit/</url>
       <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2016年，关于retrofit和okhttp这两个话题非常火，retrofit+okhhtp已经成为Android网络请求的主流框架了，看了一下现在公司的项目，还是使用的原始的HttpURLConnection，瞬间感觉有点low，通过自己的学习，决定对公司的网络请求进行一下改造，在这里做一下简单的总结，希望大家多多指正。</p>
 <h1 id="Retrofit"><a href="#Retrofit" class="headerlink" title="Retrofit"></a>Retrofit</h1><p>  retrofit是一个基于okhttp的，适用于Android，Java的网络请求工具。我觉得它其实就是对okhttp做一下统一的封装，方便广大开发者的更快捷、更方便的使用。如果你对retrofit还不是很熟悉，可以去<a href="http://square.github.io/retrofit/" target="_blank" rel="external">Retrofit官网</a>了解下，我也会在接下来做个简单的使用说明。它既然这么火，而且已经进行很好的封装了，但是我们为什么还要对它封装呢？因为每个公司的业务不一样，这个框架大而且全，其实很多在我们的业务里面根本使用不到，所以我们需要个性化定制。</p>
 <ol>
@@ -507,7 +507,7 @@
     
     <entry>
       <title><![CDATA[MarkDown的基本用法]]></title>
-      <url>/Blog/2017/03/16/MarkDown/</url>
+      <url>/2017/03/16/MarkDown/</url>
       <content type="html"><![CDATA[<p>  最近准备弄个自己的博客，记录整理一下自己的学习过程。MarkDown作为一种标记语言，简单易上手，而且比较流行的博客都对MarkDown有很好的支持，所以记录一下MarkDown的简单用户，方便在以后的学习中，能刚快的上手。</p>
 <h1 id="设置头部"><a href="#设置头部" class="headerlink" title="设置头部"></a>设置头部</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Header 1</span></div><div class="line"><span class="comment">## Header 2</span></div><div class="line"><span class="comment">### Header 3</span></div><div class="line"><span class="comment">#### Header 4</span></div><div class="line"><span class="comment">##### Header 5</span></div><div class="line"><span class="comment">###### Header 6</span></div></pre></td></tr></table></figure>
 <font color="#ff0000" size="3">效果</font>
@@ -561,7 +561,7 @@
 <p>前面的测试指图片的名称<br>后面的github mark指鼠标放在图片上展示的内容</p>
 </blockquote>
 <h1 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;854350705@qq.com&gt;</div><div class="line">&lt;https:www.baidu.com&gt;</div></pre></td></tr></table></figure>
-<h3 id="自动链接效果"><a href="#自动链接效果" class="headerlink" title="自动链接效果"></a><font color="#ff0000" size="3">自动链接效果</font></h3><p><a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#56;&#53;&#x34;&#51;&#53;&#48;&#55;&#48;&#53;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;">&#56;&#53;&#x34;&#51;&#53;&#48;&#55;&#48;&#53;&#x40;&#x71;&#113;&#46;&#99;&#111;&#x6d;</a>    </p>
+<h3 id="自动链接效果"><a href="#自动链接效果" class="headerlink" title="自动链接效果"></a><font color="#ff0000" size="3">自动链接效果</font></h3><p><a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#x38;&#x35;&#52;&#51;&#x35;&#48;&#x37;&#48;&#x35;&#x40;&#113;&#x71;&#46;&#99;&#111;&#x6d;">&#x38;&#x35;&#52;&#51;&#x35;&#48;&#x37;&#48;&#x35;&#x40;&#113;&#x71;&#46;&#99;&#111;&#x6d;</a>    </p>
 <https:www.baidu.com>
 
 
@@ -653,7 +653,7 @@ String a=&quot;a&quot;;
     
     <entry>
       <title><![CDATA[hexo使用]]></title>
-      <url>/Blog/2017/03/15/hexo/</url>
+      <url>/2017/03/15/hexo/</url>
       <content type="html"><![CDATA[<ol>
 <li>安装hexo<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div><div class="line">``` </div><div class="line">2. 初始化hexo</div></pre></td></tr></table></figure>
 </li>
@@ -673,7 +673,7 @@ String a=&quot;a&quot;;
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>/Blog/2017/03/15/hello-world/</url>
+      <url>/2017/03/15/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -690,7 +690,7 @@ String a=&quot;a&quot;;
     
     <entry>
       <title><![CDATA[Android常用工具类]]></title>
-      <url>/Blog/2017/03/14/AndroidUtils/</url>
+      <url>/2017/03/14/AndroidUtils/</url>
       <content type="html"><![CDATA[<p>##获取资源</p>
 <p>###根据id获取资源<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">getResources().getDrawable(id); <span class="comment">//通过资源id获取drawable</span></div></pre></td></tr></table></figure></p>
 <p>###根据名称和类别获取资源<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">getResources().getIdentifier(<span class="string">"ic_launcher"</span>, <span class="string">"drawable"</span>, getPackageName())</div></pre></td></tr></table></figure></p>
@@ -722,7 +722,7 @@ String a=&quot;a&quot;;
     
     <entry>
       <title><![CDATA[UML使用]]></title>
-      <url>/Blog/2016/12/07/UML/</url>
+      <url>/2016/12/07/UML/</url>
       <content type="html"><![CDATA[<blockquote>
 <p>UML（Unified Modeling Language）中文统一建模语言，是一种开放的方法，用于说明、可视化、构建和编写一个正在开发的、面向对象的、软件密集系统的制品的开放方法。UML展现了一系列最佳工程实践，这些最佳实践在对大规模，复杂系统进行建模方面，特别是在软件架构层次已经被验证有效。 【维基百科】</p>
 </blockquote>
@@ -770,7 +770,7 @@ String a=&quot;a&quot;;
     
     <entry>
       <title><![CDATA[RxJava2操作符用法示例]]></title>
-      <url>/Blog/2016/12/07/RxJava2%20example/</url>
+      <url>/2016/12/07/RxJava2%20example/</url>
       <content type="html"><![CDATA[<p>#RxJava2<br><em>SimpleExample</em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">Observable.just(&quot;Cricket&quot;, &quot;Football&quot;)..subscribeOn(Schedulers.io())</div><div class="line">                // Be notified on the main thread</div><div class="line">                .observeOn(AndroidSchedulers.mainThread())</div><div class="line">                .subscribe(new Observer&lt;String&gt;() &#123;</div><div class="line"></div><div class="line">            @Override</div><div class="line">            public void onSubscribe(Disposable d) &#123;</div><div class="line">                Log.d(TAG, &quot; onSubscribe : &quot; + d.isDisposed());</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            @Override</div><div class="line">            public void onNext(String value) &#123;</div><div class="line">                textView.append(&quot; onNext : value : &quot; + value);</div><div class="line">                textView.append(AppConstant.LINE_SEPARATOR);</div><div class="line">                Log.d(TAG, &quot; onNext : value : &quot; + value);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            @Override</div><div class="line">            public void onError(Throwable e) &#123;</div><div class="line">                textView.append(&quot; onError : &quot; + e.getMessage());</div><div class="line">                textView.append(AppConstant.LINE_SEPARATOR);</div><div class="line">                Log.d(TAG, &quot; onError : &quot; + e.getMessage());</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            @Override</div><div class="line">            public void onComplete() &#123;</div><div class="line">                textView.append(&quot; onComplete&quot;);</div><div class="line">                textView.append(AppConstant.LINE_SEPARATOR);</div><div class="line">                Log.d(TAG, &quot; onComplete&quot;);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div></pre></td></tr></table></figure>
 <p>逐行打印出数据<strong><em>**</em></strong></p>
@@ -817,7 +817,7 @@ String a=&quot;a&quot;;
     
     <entry>
       <title><![CDATA[浏览器调起app]]></title>
-      <url>/Blog/2016/11/16/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B0%83%E8%B5%B7App/</url>
+      <url>/2016/11/16/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B0%83%E8%B5%B7App/</url>
       <content type="html"><![CDATA[<h3 id="现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app-并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。"><a href="#现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app-并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。" class="headerlink" title="现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app,并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。"></a>现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app,并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。</h3><p><strong>服务端代码</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">~&lt;!DOCTYPE html&gt;    </div><div class="line">&lt;html&gt;    </div><div class="line">&lt;body&gt;    </div><div class="line">&lt;a href=&quot;scheme://DIDI/startapp?test=test&quot;&gt;启动应用程序&lt;/a&gt;   </div><div class="line">&lt;/body&gt;    </div><div class="line">&lt;/html&gt;~</div></pre></td></tr></table></figure></p>
 <p><strong>Android只需在AndroidManifest.xml文件里面为启动页面添加</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;intent-filter&gt;</div><div class="line">                &lt;action android:name=&quot;android.intent.action.VIEW&quot; /&gt;</div><div class="line">                &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;</div><div class="line">                &lt;category android:name=&quot;android.intent.category.BROWSABLE&quot; /&gt;</div><div class="line">                &lt;data</div><div class="line">                    android:host=&quot;DIDI&quot;</div><div class="line">                    android:scheme=&quot;scheme&quot; /&gt;</div><div class="line">&lt;/intent-filter&gt;</div></pre></td></tr></table></figure>
@@ -845,7 +845,7 @@ String a=&quot;a&quot;;
     
     <entry>
       <title><![CDATA[swift学习]]></title>
-      <url>/Blog/2016/11/16/swift/</url>
+      <url>/2016/11/16/swift/</url>
       <content type="html"><![CDATA[<p>#字段 dictionary<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var animalGroupsDict = [&quot;whales&quot;:&quot;pod&quot;, &quot;geese&quot;:&quot;flock&quot;, &quot;lions&quot;:&quot;pride&quot;]</div><div class="line"></div><div class="line">var groupsDict = [String:String]()</div></pre></td></tr></table></figure></p>
 <p>##常见用法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var lifeSpanDict = [&quot;African Grey Parrot&quot;: 50...70, &quot;Tiger Salamander&quot;: 12...15,</div><div class="line">    &quot;Bottlenose Dolphin&quot;: 20...30]</div><div class="line"></div><div class="line">var averageLifeSpanDict = [String:Range&lt;Int&gt;]()</div></pre></td></tr></table></figure></p>
 <font color="#ff0000" size="3"> … 运算符代表某个区间 ，如 50… 70就是50到70之间的某个数</font>
@@ -876,7 +876,7 @@ String a=&quot;a&quot;;
     
     <entry>
       <title><![CDATA[Cocos2D Start]]></title>
-      <url>/Blog/2016/10/31/CocosStart/</url>
+      <url>/2016/10/31/CocosStart/</url>
       <content type="html"><![CDATA[<p>###创建一个新的cocos项目：</p>
 <p> <code>cocos new 应用名 -p 包名 -l 语言 -d 生成路径</code></p>
 ]]></content>
@@ -898,7 +898,7 @@ String a=&quot;a&quot;;
     
     <entry>
       <title><![CDATA[java注解学习笔记]]></title>
-      <url>/Blog/2016/10/16/annotate/</url>
+      <url>/2016/10/16/annotate/</url>
       <content type="html"><![CDATA[<h1 id="Java基本注解"><a href="#Java基本注解" class="headerlink" title="Java基本注解"></a>Java基本注解</h1><h3 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h3><blockquote>
 <p>@Override 继承父类 </p>
 <p>@Deprecated 方法已经过时 </p>
@@ -954,7 +954,7 @@ runtime 运行时存在，可通过反射获取
     
     <entry>
       <title><![CDATA[如何获取Android控件高度]]></title>
-      <url>/Blog/2016/10/16/measureview/</url>
+      <url>/2016/10/16/measureview/</url>
       <content type="html"><![CDATA[<p><strong>如何获取一个控件的长和高，相信很多朋友第一眼看见这个问题都会觉得很简单，直接在onCreate里面调用getWidth、getMeasuredWidth不就可以获得了吗，但是，事实上是并没有简单的，不信的话，你可以去试一下，在onCreate里面，你是无法获得长宽值的，始终为0。<br>这是为什么呢，其实熟悉view绘制流程的朋友应该一眼就看出来了，在onCreate中，我们的控件其实还并没有画好，换句话说，等onCreate方法执行完了，我们定义的控件才会被度量(measure)，所以我们在onCreate方法里面通过view.getHeight()获取控件的高度或者宽度肯定是0。</strong></p>
 <p>####有三种解决方式</p>
 <ol>
@@ -988,8 +988,32 @@ int width = imageView.getMeasuredWidth();`
     </entry>
     
     <entry>
+      <title><![CDATA[webview调起微信支付宝]]></title>
+      <url>/2016/10/16/pay/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> 支付 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 微信 </tag>
+            
+            <tag> 支付 </tag>
+            
+            <tag> 支付宝 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Android studio关联Gradle源码]]></title>
-      <url>/Blog/2016/10/16/Android%20studio%E5%85%B3%E8%81%94%E6%BA%90%E7%A0%81/</url>
+      <url>/2016/10/16/Android%20studio%E5%85%B3%E8%81%94%E6%BA%90%E7%A0%81/</url>
       <content type="html"><![CDATA[<p>###&emsp;&emsp;Android studio都出来这么久了，相信现在的Android开发者大部分都已经在使用了。可能你曾经对Android有多年的开发经验，但是对于gradle这个工具，可能不是很了解，或者之前从来都没接触过。Android studio 对 Gradle也没有自动提示，对于自己从0开始写一个gradle配置文件，还是很难的。或者查看大神代码的时候，对于Gradle的各种配置搞得云里雾里。这个时候就会想，要是能直接在Android studio里面关联源码多好啊。这篇教程就是教你在Android studio里面关联gradle源码。</p>
 <p><img src="http://ww1.sinaimg.cn/large/d948997dgy1fe66977rucj20ec051gln.jpg" alt="android studio查看源码"><br><img src="http://ww1.sinaimg.cn/large/d948997dly1fe66ap7x7wj20g104s748.jpg" alt="源码"></p>
 <p>###&nbsp;&nbsp;&nbsp;&nbsp;打开我们的Gradle文件，发现某个写法我们不是很了解，自然的想到了Android studio的看源码大法。点进去才发现，这是什么啊，没有任何注释，方法和参数都还混淆了，怎么玩？这就是因为我们还没能关联源码，我们打开的是class文件，而不是源码。</p>
@@ -1021,32 +1045,8 @@ int width = imageView.getMeasuredWidth();`
     </entry>
     
     <entry>
-      <title><![CDATA[webview调起微信支付宝]]></title>
-      <url>/Blog/2016/10/16/pay/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> 支付 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 微信 </tag>
-            
-            <tag> 支付 </tag>
-            
-            <tag> 支付宝 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[支付分享]]></title>
-      <url>/Blog/2016/10/16/share/</url>
+      <url>/2016/10/16/share/</url>
       <content type="html"><![CDATA[<p>  最近由于公司想弄一个新手推荐活动，因为是推荐活动，必须借用现在流行的社交软件进行各种分享，只要形式有微信分享到好友或者朋友圈、QQ分享给好友或者空间、微博分享和短信分享等。下面我就跟大家一起聊下在分享的过程中所遇到的各种坑。本文来自于自己的经验，不足的地方还请指正。首先说下我是怎么实现的，然后给大家说下实现过程中应该注意的。</p>
 <h2 id="微信支付"><a href="#微信支付" class="headerlink" title="微信支付"></a>微信支付</h2><ol>
 <li><p>微信支付注册    </p>
