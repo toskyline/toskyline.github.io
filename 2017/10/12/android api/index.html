@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.3.4 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+        周俊鹏的博客
+    </title>
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="ToSkyline">
+    <meta name="description" content="爱电脑，爱游戏，更爱Beautiful Grill！">
+    <meta name="keywords" content="null">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/Blog/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/Blog/img/favicon.png">
+    <link rel="apple-touch-icon" href="/Blog/img/favicon.png">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="周俊鹏的博客">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://www.pzhzjp.cn/Blog">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="周俊鹏的博客">
+    <meta property="og:description" content="爱电脑，爱游戏，更爱Beautiful Grill！">
+    
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/Blog/css/material.min.css">
+        <link rel="stylesheet" href="/Blog/css/style.min.css">
+        <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: [object Object];
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #d2b48c !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #d2b48c !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #d2b48c !important;
+  }
+
+  .toTop {
+    background: #607d8b !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #607d8b;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #607d8b;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #607d8b;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body {
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+        <script src="/Blog/js/jquery.min.js"></script>
+        <script src="/Blog/js/queue.js"></script>
+    
+
+    <!-- UC Browser Compatible -->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write("<link rel=\"stylesheet\" href=\"/Blog/css/uc.css\">");
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
+        <script type="text/javascript">
+            queue.offer(function(){
+                $('body').attr('data-original', 'https://api.i-meto.com/bing?s');
+            });
+        </script>
+    
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android-简介"><span class="post-toc-number">1.</span> <span class="post-toc-text">Android 简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用基础知识"><span class="post-toc-number">2.</span> <span class="post-toc-text">应用基础知识</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#设备兼容性-Device-Compatibility"><span class="post-toc-number">3.</span> <span class="post-toc-text">设备兼容性 Device Compatibility</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#系统权限"><span class="post-toc-number">4.</span> <span class="post-toc-text">系统权限</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#平台架构"><span class="post-toc-number">5.</span> <span class="post-toc-text">平台架构</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用-Java-8-语言功能"><span class="post-toc-number">6.</span> <span class="post-toc-text">使用 Java 8 语言功能</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在-Android-Runtime-ART-上验证应用行为"><span class="post-toc-number">7.</span> <span class="post-toc-text">在 Android Runtime (ART) 上验证应用行为</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用组件"><span class="post-toc-number">8.</span> <span class="post-toc-text">应用组件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Intent-和-Intent-过滤器"><span class="post-toc-number">9.</span> <span class="post-toc-text">Intent 和 Intent 过滤器</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#通用-Intent"><span class="post-toc-number">10.</span> <span class="post-toc-text">通用 Intent</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Activity"><span class="post-toc-number">11.</span> <span class="post-toc-text">Activity</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#片段-fragment"><span class="post-toc-number">12.</span> <span class="post-toc-text">片段 fragment</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#加载器"><span class="post-toc-number">13.</span> <span class="post-toc-text">加载器</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#任务和返回栈"><span class="post-toc-number">14.</span> <span class="post-toc-text">任务和返回栈</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#概览屏幕"><span class="post-toc-number">15.</span> <span class="post-toc-text">概览屏幕</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#服务"><span class="post-toc-number">16.</span> <span class="post-toc-text">服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#绑定服务"><span class="post-toc-number">17.</span> <span class="post-toc-text">绑定服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android-接口定义语言-AIDL"><span class="post-toc-number">18.</span> <span class="post-toc-text">Android 接口定义语言 (AIDL)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#内容提供程序"><span class="post-toc-number">19.</span> <span class="post-toc-text">内容提供程序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#内容提供程序基础知识"><span class="post-toc-number">20.</span> <span class="post-toc-text">内容提供程序基础知识</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建内容提供程序"><span class="post-toc-number">21.</span> <span class="post-toc-text">创建内容提供程序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#日历提供程序"><span class="post-toc-number">22.</span> <span class="post-toc-text">日历提供程序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#联系人提供程序"><span class="post-toc-number">23.</span> <span class="post-toc-text">联系人提供程序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#存储访问框架"><span class="post-toc-number">24.</span> <span class="post-toc-text">存储访问框架</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用小部件-App-Widgets"><span class="post-toc-number">25.</span> <span class="post-toc-text">应用小部件 App Widgets</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用小部件主机-App-Widget-Host"><span class="post-toc-number">26.</span> <span class="post-toc-text">应用小部件主机 App Widget Host</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进程和线程"><span class="post-toc-number">27.</span> <span class="post-toc-text">进程和线程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用资源-App-Resources"><span class="post-toc-number">28.</span> <span class="post-toc-text">应用资源 App Resources</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#资源概览"><span class="post-toc-number">29.</span> <span class="post-toc-text">资源概览</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#提供资源"><span class="post-toc-number">30.</span> <span class="post-toc-text">提供资源</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#访问资源"><span class="post-toc-number">31.</span> <span class="post-toc-text">访问资源</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#处理运行时变更"><span class="post-toc-number">32.</span> <span class="post-toc-text">处理运行时变更</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#本地化-Localizing-with-Resources"><span class="post-toc-number">33.</span> <span class="post-toc-text">本地化 Localizing with Resources</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ICU4J-Android-框架-API"><span class="post-toc-number">34.</span> <span class="post-toc-text">ICU4J Android 框架 API</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#语言和语言区域"><span class="post-toc-number">35.</span> <span class="post-toc-text">语言和语言区域</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#资源类型-Resource-Types"><span class="post-toc-number">36.</span> <span class="post-toc-text">资源类型 Resource Types</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#动画-Animation-Resources"><span class="post-toc-number">37.</span> <span class="post-toc-text">动画 Animation Resources</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#颜色状态列表-Color-State-List-Resource"><span class="post-toc-number">38.</span> <span class="post-toc-text">颜色状态列表 Color State List Resource</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#可绘制对象"><span class="post-toc-number">39.</span> <span class="post-toc-text">可绘制对象</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#布局-Layout-Resource"><span class="post-toc-number">40.</span> <span class="post-toc-text">布局 Layout Resource</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#菜单-Menu-Resource"><span class="post-toc-number">41.</span> <span class="post-toc-text">菜单 Menu Resource</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字符串"><span class="post-toc-number">42.</span> <span class="post-toc-text">字符串</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#样式-Style-Resource"><span class="post-toc-number">43.</span> <span class="post-toc-text">样式 Style Resource</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#其他类型-More-Resource-Types"><span class="post-toc-number">44.</span> <span class="post-toc-text">其他类型 More Resource Types</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用清单"><span class="post-toc-number">45.</span> <span class="post-toc-text">应用清单</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#用户界面"><span class="post-toc-number">46.</span> <span class="post-toc-text">用户界面</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#UI-概览"><span class="post-toc-number">47.</span> <span class="post-toc-text">UI 概览</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#布局"><span class="post-toc-number">48.</span> <span class="post-toc-text">布局</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#线性布局"><span class="post-toc-number">49.</span> <span class="post-toc-text">线性布局</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#相对布局-Relative-Layout"><span class="post-toc-number">50.</span> <span class="post-toc-text">相对布局 Relative Layout</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#列表视图"><span class="post-toc-number">51.</span> <span class="post-toc-text">列表视图</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#网格视图-Grid-View"><span class="post-toc-number">52.</span> <span class="post-toc-text">网格视图 Grid View</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#输入控件"><span class="post-toc-number">53.</span> <span class="post-toc-text">输入控件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#按钮-Buttons"><span class="post-toc-number">54.</span> <span class="post-toc-text">按钮 Buttons</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文本字段-Specifying-the-Input-Method-Type"><span class="post-toc-number">55.</span> <span class="post-toc-text">文本字段 Specifying the Input Method Type</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#复选框-Checkboxes"><span class="post-toc-number">56.</span> <span class="post-toc-text">复选框 Checkboxes</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#单选按钮-Radio-Buttons"><span class="post-toc-number">57.</span> <span class="post-toc-text">单选按钮 Radio Buttons</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#切换按钮-Toggle-Buttons"><span class="post-toc-number">58.</span> <span class="post-toc-text">切换按钮 Toggle Buttons</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#微调框"><span class="post-toc-number">59.</span> <span class="post-toc-text">微调框</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#选取器"><span class="post-toc-number">60.</span> <span class="post-toc-text">选取器</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#输入事件"><span class="post-toc-number">61.</span> <span class="post-toc-text">输入事件</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#菜单"><span class="post-toc-number">62.</span> <span class="post-toc-text">菜单</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#设置"><span class="post-toc-number">63.</span> <span class="post-toc-text">设置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#对话框"><span class="post-toc-number">64.</span> <span class="post-toc-text">对话框</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#通知"><span class="post-toc-number">65.</span> <span class="post-toc-text">通知</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Toasts"><span class="post-toc-number">66.</span> <span class="post-toc-text">Toasts</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#搜索-Search-Overview"><span class="post-toc-number">67.</span> <span class="post-toc-text">搜索 Search Overview</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建搜索界面-Creating-a-Search-Interface"><span class="post-toc-number">68.</span> <span class="post-toc-text">创建搜索界面 Creating a Search Interface</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#添加近期查询建议-Adding-Recent-Query-Suggestions"><span class="post-toc-number">69.</span> <span class="post-toc-text">添加近期查询建议 Adding Recent Query Suggestions</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#添加自定义建议-Adding-Custom-Suggestions"><span class="post-toc-number">70.</span> <span class="post-toc-text">添加自定义建议 Adding Custom Suggestions</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#可搜索配置-Searchable-Configuration"><span class="post-toc-number">71.</span> <span class="post-toc-text">可搜索配置 Searchable Configuration</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#多窗口支持"><span class="post-toc-number">72.</span> <span class="post-toc-text">多窗口支持</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#拖放"><span class="post-toc-number">73.</span> <span class="post-toc-text">拖放</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#无障碍功能-Accessibility"><span class="post-toc-number">74.</span> <span class="post-toc-text">无障碍功能 Accessibility</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#为应用设置无障碍功能-Making-Apps-More-Accessible"><span class="post-toc-number">75.</span> <span class="post-toc-text">为应用设置无障碍功能 Making Apps More Accessible</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#无障碍功能开发者检查单-Accessibility-Developer-Checklist"><span class="post-toc-number">76.</span> <span class="post-toc-text">无障碍功能开发者检查单 Accessibility Developer Checklist</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#构建无障碍服务-Building-Accessibility-Services"><span class="post-toc-number">77.</span> <span class="post-toc-text">构建无障碍服务 Building Accessibility Services</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#样式和主题"><span class="post-toc-number">78.</span> <span class="post-toc-text">样式和主题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#自定义组件-Custom-Components"><span class="post-toc-number">79.</span> <span class="post-toc-text">自定义组件 Custom Components</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#动画和图形-Animation-and-Graphics"><span class="post-toc-number">80.</span> <span class="post-toc-text">动画和图形 Animation and Graphics</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#概览-Overview"><span class="post-toc-number">81.</span> <span class="post-toc-text">概览 Overview</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#属性动画-Property-Animation"><span class="post-toc-number">82.</span> <span class="post-toc-text">属性动画 Property Animation</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#视图动画-View-Animation"><span class="post-toc-number">83.</span> <span class="post-toc-text">视图动画 View Animation</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#可绘制动画-Drawable-Animation"><span class="post-toc-number">84.</span> <span class="post-toc-text">可绘制动画 Drawable Animation</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#画布和可绘制对象-Canvas-and-Drawables"><span class="post-toc-number">85.</span> <span class="post-toc-text">画布和可绘制对象 Canvas and Drawables</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#OpenGL-ES"><span class="post-toc-number">86.</span> <span class="post-toc-text">OpenGL ES</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#硬件加速-Hardware-Acceleration"><span class="post-toc-number">87.</span> <span class="post-toc-text">硬件加速 Hardware Acceleration</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#计算-Computation"><span class="post-toc-number">88.</span> <span class="post-toc-text">计算 Computation</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#RenderScript"><span class="post-toc-number">89.</span> <span class="post-toc-text">RenderScript</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#高级-RenderScript"><span class="post-toc-number">90.</span> <span class="post-toc-text">高级 RenderScript</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Runtime-API-参考"><span class="post-toc-number">91.</span> <span class="post-toc-text">Runtime API 参考</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#媒体和相机-Media-and-Camera"><span class="post-toc-number">92.</span> <span class="post-toc-text">媒体和相机 Media and Camera</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#媒体回放-MediaPlayer"><span class="post-toc-number">93.</span> <span class="post-toc-text">媒体回放 MediaPlayer</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#媒体路由器-MediaRouter-API"><span class="post-toc-number">94.</span> <span class="post-toc-text">媒体路由器 MediaRouter API</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#媒体路由提供程序-Media-Route-Provider-API"><span class="post-toc-number">95.</span> <span class="post-toc-text">媒体路由提供程序 Media Route Provider API</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ExoPlayer"><span class="post-toc-number">96.</span> <span class="post-toc-text">ExoPlayer</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#支持的媒体格式-Supported-Media-Formats"><span class="post-toc-number">97.</span> <span class="post-toc-text">支持的媒体格式 Supported Media Formats</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#音频采集-MediaRecorder"><span class="post-toc-number">98.</span> <span class="post-toc-text">音频采集 MediaRecorder</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#相机-Camera-API"><span class="post-toc-number">99.</span> <span class="post-toc-text">相机 Camera API</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#位置和传感器-Location-and-Sensors-APIs"><span class="post-toc-number">100.</span> <span class="post-toc-text">位置和传感器 Location and Sensors APIs</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#位置和地图-Location-and-Maps"><span class="post-toc-number">101.</span> <span class="post-toc-text">位置和地图 Location and Maps</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#位置策略-Location-Strategies"><span class="post-toc-number">102.</span> <span class="post-toc-text">位置策略 Location Strategies</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#传感器概览-Sensors-Overview"><span class="post-toc-number">103.</span> <span class="post-toc-text">传感器概览 Sensors Overview</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#运动传感器-Motion-Sensors"><span class="post-toc-number">104.</span> <span class="post-toc-text">运动传感器 Motion Sensors</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#位置传感器-Position-Sensors"><span class="post-toc-number">105.</span> <span class="post-toc-text">位置传感器 Position Sensors</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#环境传感器-Environment-Sensors"><span class="post-toc-number">106.</span> <span class="post-toc-text">环境传感器 Environment Sensors</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#连接-Connectivity"><span class="post-toc-number">107.</span> <span class="post-toc-text">连接 Connectivity</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#蓝牙"><span class="post-toc-number">108.</span> <span class="post-toc-text">蓝牙</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#蓝牙低功耗-Bluetooth-Low-Energy"><span class="post-toc-number">109.</span> <span class="post-toc-text">蓝牙低功耗 Bluetooth Low Energy</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#NFC"><span class="post-toc-number">110.</span> <span class="post-toc-text">NFC</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#NFC-基础知识-NFC-Basics"><span class="post-toc-number">111.</span> <span class="post-toc-text">NFC 基础知识 NFC Basics</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#高级-NFC-Advanced-NFC"><span class="post-toc-number">112.</span> <span class="post-toc-text">高级 NFC Advanced NFC</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基于主机的卡模拟-Host-based-Card-Emulation"><span class="post-toc-number">113.</span> <span class="post-toc-text">基于主机的卡模拟 Host-based Card Emulation</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Wi-Fi-P2P"><span class="post-toc-number">114.</span> <span class="post-toc-text">Wi-Fi P2P</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#USB"><span class="post-toc-number">115.</span> <span class="post-toc-text">USB</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#配件-USB-Accessory"><span class="post-toc-number">116.</span> <span class="post-toc-text">配件 USB Accessory</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#主机-USB-Host"><span class="post-toc-number">117.</span> <span class="post-toc-text">主机 USB Host</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#SIP-Session-Initiation-Protocol"><span class="post-toc-number">118.</span> <span class="post-toc-text">SIP Session Initiation Protocol</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文本和输入-Text-and-Input"><span class="post-toc-number">119.</span> <span class="post-toc-text">文本和输入 Text and Input</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#复制和粘贴-Copy-and-Paste"><span class="post-toc-number">120.</span> <span class="post-toc-text">复制和粘贴 Copy and Paste</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#创建-IME-Creating-an-Input-Method"><span class="post-toc-number">121.</span> <span class="post-toc-text">创建 IME Creating an Input Method</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#拼写检查程序-Spelling-Checker-Framework"><span class="post-toc-number">122.</span> <span class="post-toc-text">拼写检查程序 Spelling Checker Framework</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数据存储-Data-Storage"><span class="post-toc-number">123.</span> <span class="post-toc-text">数据存储 Data Storage</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#存储选项"><span class="post-toc-number">124.</span> <span class="post-toc-text">存储选项</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数据备份-Backing-up-App-Data-to-the-Cloud"><span class="post-toc-number">125.</span> <span class="post-toc-text">数据备份 Backing up App Data to the Cloud</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#应用安装位置-App-Install-Location"><span class="post-toc-number">126.</span> <span class="post-toc-text">应用安装位置 App Install Location</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android-库"><span class="post-toc-number">127.</span> <span class="post-toc-text">Android 库</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#支持库"><span class="post-toc-number">128.</span> <span class="post-toc-text">支持库</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#功能"><span class="post-toc-number">129.</span> <span class="post-toc-text">功能</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#设置-1"><span class="post-toc-number">130.</span> <span class="post-toc-text">设置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#修订历史记录-Recent-Support-Library-Revisions"><span class="post-toc-number">131.</span> <span class="post-toc-text">修订历史记录 Recent Support Library Revisions</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数据绑定库-Data-Binding-Library"><span class="post-toc-number">132.</span> <span class="post-toc-text">数据绑定库 Data Binding Library</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#测试支持库"><span class="post-toc-number">133.</span> <span class="post-toc-text">测试支持库</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#管理-Administration"><span class="post-toc-number">134.</span> <span class="post-toc-text">管理 Administration</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#设备政策-Device-Administration"><span class="post-toc-number">135.</span> <span class="post-toc-text">设备政策 Device Administration</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#网络应用-Web-Apps"><span class="post-toc-number">136.</span> <span class="post-toc-text">网络应用 Web Apps</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在网络应用中支持不同屏幕-Supporting-Different-Screens-in-Web-Apps"><span class="post-toc-number">137.</span> <span class="post-toc-text">在网络应用中支持不同屏幕 Supporting Different Screens in Web Apps</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在-WebView-中构建网络应用-Building-Web-Apps-in-WebView"><span class="post-toc-number">138.</span> <span class="post-toc-text">在 WebView 中构建网络应用 Building Web Apps in WebView</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#迁移到-Android-4-4-中的-WebView-Migrating-to-WebView-in-Android-4-4"><span class="post-toc-number">139.</span> <span class="post-toc-text">迁移到 Android 4.4 中的 WebView Migrating to WebView in Android 4.4</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#调试网络应用-Debugging-Web-Apps"><span class="post-toc-number">140.</span> <span class="post-toc-text">调试网络应用 Debugging Web Apps</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#网络应用最佳做法-Best-Practices-for-Web-Apps"><span class="post-toc-number">141.</span> <span class="post-toc-text">网络应用最佳做法 Best Practices for Web Apps</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最佳实践-Best-Practices"><span class="post-toc-number">142.</span> <span class="post-toc-text">最佳实践 Best Practices</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#支持多种屏幕"><span class="post-toc-number">143.</span> <span class="post-toc-text">支持多种屏幕</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#分配到特定屏幕-Distributing-to-Specific-Screens"><span class="post-toc-number">144.</span> <span class="post-toc-text">分配到特定屏幕 Distributing to Specific Screens</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#屏幕兼容性模式-Screen-Compatibility-Mode"><span class="post-toc-number">145.</span> <span class="post-toc-text">屏幕兼容性模式 Screen Compatibility Mode</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#支持平板电脑和手机-Supporting-Tablets-and-Handsets"><span class="post-toc-number">146.</span> <span class="post-toc-text">支持平板电脑和手机 Supporting Tablets and Handsets</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/Blog/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/Blog/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>ToSkyline</strong>
+        <span>10月 12, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://www.pzhzjp.cn/Blog/Blog//Blog/2017/10/12/android api/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://www.pzhzjp.cn/Blog/Blog//Blog/2017/10/12/android api/index.html&via=ToSkyline" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://www.pzhzjp.cn/Blog/Blog//Blog/2017/10/12/android api/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://www.pzhzjp.cn/Blog/Blog//Blog/2017/10/12/android api/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://www.pzhzjp.cn/Blog/Blog//Blog/2017/10/12/android api/index.html&title=" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=周俊鹏的博客&title=&summary=爱电脑，爱游戏，更爱Beautiful Grill！&pics=http://www.pzhzjp.cn/Blog/Blog/img/favicon.png&url=http://www.pzhzjp.cn/Blog/Blog/2017/10/12/android api/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="Android-简介"><a href="#Android-简介" class="headerlink" title="Android 简介"></a>Android 简介</h2><p><a href="https://developer.android.google.cn/guide/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/index.html</a></p>
+<h2 id="应用基础知识"><a href="#应用基础知识" class="headerlink" title="应用基础知识"></a>应用基础知识</h2><p><a href="https://developer.android.google.cn/guide/components/fundamentals.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/fundamentals.html</a></p>
+<h2 id="设备兼容性-Device-Compatibility"><a href="#设备兼容性-Device-Compatibility" class="headerlink" title="设备兼容性 Device Compatibility"></a>设备兼容性 Device Compatibility</h2><p><a href="https://developer.android.google.cn/guide/practices/compatibility.html" target="_blank" rel="external">https://developer.android.google.cn/guide/practices/compatibility.html</a></p>
+<h2 id="系统权限"><a href="#系统权限" class="headerlink" title="系统权限"></a>系统权限</h2><p><a href="https://developer.android.google.cn/guide/topics/security/permissions.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/security/permissions.html</a></p>
+<h2 id="平台架构"><a href="#平台架构" class="headerlink" title="平台架构"></a>平台架构</h2><p><a href="https://developer.android.google.cn/guide/platform/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/platform/index.html</a></p>
+<h2 id="使用-Java-8-语言功能"><a href="#使用-Java-8-语言功能" class="headerlink" title="使用 Java 8 语言功能"></a>使用 Java 8 语言功能</h2><p><a href="https://developer.android.google.cn/guide/platform/j8-jack.html" target="_blank" rel="external">https://developer.android.google.cn/guide/platform/j8-jack.html</a></p>
+<h2 id="在-Android-Runtime-ART-上验证应用行为"><a href="#在-Android-Runtime-ART-上验证应用行为" class="headerlink" title="在 Android Runtime (ART) 上验证应用行为"></a>在 Android Runtime (ART) 上验证应用行为</h2><p><a href="https://developer.android.google.cn/guide/practices/verifying-apps-art.html" target="_blank" rel="external">https://developer.android.google.cn/guide/practices/verifying-apps-art.html</a></p>
+<h2 id="应用组件"><a href="#应用组件" class="headerlink" title="应用组件"></a>应用组件</h2><p><a href="https://developer.android.google.cn/guide/components/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/index.html</a></p>
+<h2 id="Intent-和-Intent-过滤器"><a href="#Intent-和-Intent-过滤器" class="headerlink" title="Intent 和 Intent 过滤器"></a>Intent 和 Intent 过滤器</h2><p><a href="https://developer.android.google.cn/guide/components/intents-filters.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/intents-filters.html</a></p>
+<h2 id="通用-Intent"><a href="#通用-Intent" class="headerlink" title="通用 Intent"></a>通用 Intent</h2><p><a href="https://developer.android.google.cn/guide/components/intents-common.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/intents-common.html</a></p>
+<h2 id="Activity"><a href="#Activity" class="headerlink" title="Activity"></a>Activity</h2><p><a href="https://developer.android.google.cn/guide/components/activities.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/activities.html</a></p>
+<h2 id="片段-fragment"><a href="#片段-fragment" class="headerlink" title="片段 fragment"></a>片段 fragment</h2><p><a href="https://developer.android.google.cn/guide/components/fragments.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/fragments.html</a></p>
+<h2 id="加载器"><a href="#加载器" class="headerlink" title="加载器"></a>加载器</h2><p><a href="https://developer.android.google.cn/guide/components/loaders.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/loaders.html</a></p>
+<h2 id="任务和返回栈"><a href="#任务和返回栈" class="headerlink" title="任务和返回栈"></a>任务和返回栈</h2><p><a href="https://developer.android.google.cn/guide/components/tasks-and-back-stack.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/tasks-and-back-stack.html</a></p>
+<h2 id="概览屏幕"><a href="#概览屏幕" class="headerlink" title="概览屏幕"></a>概览屏幕</h2><p><a href="https://developer.android.google.cn/guide/components/recents.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/recents.html</a></p>
+<h2 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h2><p><a href="https://developer.android.google.cn/guide/components/services.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/services.html</a></p>
+<h2 id="绑定服务"><a href="#绑定服务" class="headerlink" title="绑定服务"></a>绑定服务</h2><p><a href="https://developer.android.google.cn/guide/components/bound-services.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/bound-services.html</a></p>
+<h2 id="Android-接口定义语言-AIDL"><a href="#Android-接口定义语言-AIDL" class="headerlink" title="Android 接口定义语言 (AIDL)"></a>Android 接口定义语言 (AIDL)</h2><p><a href="https://developer.android.google.cn/guide/components/aidl.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/aidl.html</a></p>
+<h2 id="内容提供程序"><a href="#内容提供程序" class="headerlink" title="内容提供程序"></a>内容提供程序</h2><p><a href="https://developer.android.google.cn/guide/topics/providers/content-providers.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/providers/content-providers.html</a></p>
+<h2 id="内容提供程序基础知识"><a href="#内容提供程序基础知识" class="headerlink" title="内容提供程序基础知识"></a>内容提供程序基础知识</h2><p><a href="https://developer.android.google.cn/guide/topics/providers/content-provider-basics.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/providers/content-provider-basics.html</a></p>
+<h2 id="创建内容提供程序"><a href="#创建内容提供程序" class="headerlink" title="创建内容提供程序"></a>创建内容提供程序</h2><p><a href="https://developer.android.google.cn/guide/topics/providers/content-provider-creating.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/providers/content-provider-creating.html</a></p>
+<h2 id="日历提供程序"><a href="#日历提供程序" class="headerlink" title="日历提供程序"></a>日历提供程序</h2><p><a href="https://developer.android.google.cn/guide/topics/providers/calendar-provider.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/providers/calendar-provider.html</a></p>
+<h2 id="联系人提供程序"><a href="#联系人提供程序" class="headerlink" title="联系人提供程序"></a>联系人提供程序</h2><p><a href="https://developer.android.google.cn/guide/topics/providers/contacts-provider.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/providers/contacts-provider.html</a></p>
+<h2 id="存储访问框架"><a href="#存储访问框架" class="headerlink" title="存储访问框架"></a>存储访问框架</h2><p><a href="https://developer.android.google.cn/guide/topics/providers/document-provider.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/providers/document-provider.html</a></p>
+<h2 id="应用小部件-App-Widgets"><a href="#应用小部件-App-Widgets" class="headerlink" title="应用小部件 App Widgets"></a>应用小部件 App Widgets</h2><p><a href="https://developer.android.google.cn/guide/topics/appwidgets/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/appwidgets/index.html</a></p>
+<h2 id="应用小部件主机-App-Widget-Host"><a href="#应用小部件主机-App-Widget-Host" class="headerlink" title="应用小部件主机 App Widget Host"></a>应用小部件主机 App Widget Host</h2><p><a href="https://developer.android.google.cn/guide/topics/appwidgets/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/appwidgets/index.html</a></p>
+<h2 id="进程和线程"><a href="#进程和线程" class="headerlink" title="进程和线程"></a>进程和线程</h2><p><a href="https://developer.android.google.cn/guide/components/processes-and-threads.html" target="_blank" rel="external">https://developer.android.google.cn/guide/components/processes-and-threads.html</a></p>
+<h2 id="应用资源-App-Resources"><a href="#应用资源-App-Resources" class="headerlink" title="应用资源 App Resources"></a>应用资源 App Resources</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/index.html</a></p>
+<h2 id="资源概览"><a href="#资源概览" class="headerlink" title="资源概览"></a>资源概览</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/overview.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/overview.html</a></p>
+<h2 id="提供资源"><a href="#提供资源" class="headerlink" title="提供资源"></a>提供资源</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/providing-resources.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/providing-resources.html</a></p>
+<h2 id="访问资源"><a href="#访问资源" class="headerlink" title="访问资源"></a>访问资源</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/accessing-resources.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/accessing-resources.html</a></p>
+<h2 id="处理运行时变更"><a href="#处理运行时变更" class="headerlink" title="处理运行时变更"></a>处理运行时变更</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/runtime-changes.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/runtime-changes.html</a></p>
+<h2 id="本地化-Localizing-with-Resources"><a href="#本地化-Localizing-with-Resources" class="headerlink" title="本地化 Localizing with Resources"></a>本地化 Localizing with Resources</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/localization.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/localization.html</a></p>
+<h2 id="ICU4J-Android-框架-API"><a href="#ICU4J-Android-框架-API" class="headerlink" title="ICU4J Android 框架 API"></a>ICU4J Android 框架 API</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/icu4j-framework.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/icu4j-framework.html</a></p>
+<h2 id="语言和语言区域"><a href="#语言和语言区域" class="headerlink" title="语言和语言区域"></a>语言和语言区域</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/multilingual-support.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/multilingual-support.html</a></p>
+<h2 id="资源类型-Resource-Types"><a href="#资源类型-Resource-Types" class="headerlink" title="资源类型 Resource Types"></a>资源类型 Resource Types</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/available-resources.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/available-resources.html</a></p>
+<h2 id="动画-Animation-Resources"><a href="#动画-Animation-Resources" class="headerlink" title="动画 Animation Resources"></a>动画 Animation Resources</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/animation-resource.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/animation-resource.html</a></p>
+<h2 id="颜色状态列表-Color-State-List-Resource"><a href="#颜色状态列表-Color-State-List-Resource" class="headerlink" title="颜色状态列表 Color State List Resource"></a>颜色状态列表 Color State List Resource</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/color-list-resource.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/color-list-resource.html</a></p>
+<h2 id="可绘制对象"><a href="#可绘制对象" class="headerlink" title="可绘制对象"></a>可绘制对象</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/drawable-resource.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/drawable-resource.html</a></p>
+<h2 id="布局-Layout-Resource"><a href="#布局-Layout-Resource" class="headerlink" title="布局 Layout Resource"></a>布局 Layout Resource</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/layout-resource.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/layout-resource.html</a></p>
+<h2 id="菜单-Menu-Resource"><a href="#菜单-Menu-Resource" class="headerlink" title="菜单 Menu Resource"></a>菜单 Menu Resource</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/menu-resource.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/menu-resource.html</a></p>
+<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/string-resource.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/string-resource.html</a></p>
+<h2 id="样式-Style-Resource"><a href="#样式-Style-Resource" class="headerlink" title="样式 Style Resource"></a>样式 Style Resource</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/style-resource.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/style-resource.html</a></p>
+<h2 id="其他类型-More-Resource-Types"><a href="#其他类型-More-Resource-Types" class="headerlink" title="其他类型 More Resource Types"></a>其他类型 More Resource Types</h2><p><a href="https://developer.android.google.cn/guide/topics/resources/more-resources.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/resources/more-resources.html</a></p>
+<h2 id="应用清单"><a href="#应用清单" class="headerlink" title="应用清单"></a>应用清单</h2><p><a href="https://developer.android.google.cn/guide/topics/manifest/manifest-intro.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/manifest/manifest-intro.html</a></p>
+<h2 id="用户界面"><a href="#用户界面" class="headerlink" title="用户界面"></a>用户界面</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/index.html</a></p>
+<h2 id="UI-概览"><a href="#UI-概览" class="headerlink" title="UI 概览"></a>UI 概览</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/overview.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/overview.html</a></p>
+<h2 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/declaring-layout.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/declaring-layout.html</a></p>
+<h2 id="线性布局"><a href="#线性布局" class="headerlink" title="线性布局"></a>线性布局</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/layout/linear.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/layout/linear.html</a></p>
+<h2 id="相对布局-Relative-Layout"><a href="#相对布局-Relative-Layout" class="headerlink" title="相对布局 Relative Layout"></a>相对布局 Relative Layout</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/layout/relative.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/layout/relative.html</a></p>
+<h2 id="列表视图"><a href="#列表视图" class="headerlink" title="列表视图"></a>列表视图</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/layout/listview.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/layout/listview.html</a></p>
+<h2 id="网格视图-Grid-View"><a href="#网格视图-Grid-View" class="headerlink" title="网格视图 Grid View"></a>网格视图 Grid View</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/layout/gridview.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/layout/gridview.html</a></p>
+<h2 id="输入控件"><a href="#输入控件" class="headerlink" title="输入控件"></a>输入控件</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/controls.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/controls.html</a></p>
+<h2 id="按钮-Buttons"><a href="#按钮-Buttons" class="headerlink" title="按钮 Buttons"></a>按钮 Buttons</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/controls/button.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/controls/button.html</a></p>
+<h2 id="文本字段-Specifying-the-Input-Method-Type"><a href="#文本字段-Specifying-the-Input-Method-Type" class="headerlink" title="文本字段 Specifying the Input Method Type"></a>文本字段 Specifying the Input Method Type</h2><p><a href="https://developer.android.google.cn/training/keyboard-input/style.html" target="_blank" rel="external">https://developer.android.google.cn/training/keyboard-input/style.html</a></p>
+<h2 id="复选框-Checkboxes"><a href="#复选框-Checkboxes" class="headerlink" title="复选框 Checkboxes"></a>复选框 Checkboxes</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/controls/checkbox.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/controls/checkbox.html</a></p>
+<h2 id="单选按钮-Radio-Buttons"><a href="#单选按钮-Radio-Buttons" class="headerlink" title="单选按钮 Radio Buttons"></a>单选按钮 Radio Buttons</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/controls/radiobutton.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/controls/radiobutton.html</a></p>
+<h2 id="切换按钮-Toggle-Buttons"><a href="#切换按钮-Toggle-Buttons" class="headerlink" title="切换按钮 Toggle Buttons"></a>切换按钮 Toggle Buttons</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/controls/togglebutton.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/controls/togglebutton.html</a></p>
+<h2 id="微调框"><a href="#微调框" class="headerlink" title="微调框"></a>微调框</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/controls/spinner.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/controls/spinner.html</a></p>
+<h2 id="选取器"><a href="#选取器" class="headerlink" title="选取器"></a>选取器</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/controls/pickers.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/controls/pickers.html</a></p>
+<h2 id="输入事件"><a href="#输入事件" class="headerlink" title="输入事件"></a>输入事件</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/ui-events.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/ui-events.html</a></p>
+<h2 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/menus.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/menus.html</a></p>
+<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/settings.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/settings.html</a></p>
+<h2 id="对话框"><a href="#对话框" class="headerlink" title="对话框"></a>对话框</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/dialogs.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/dialogs.html</a></p>
+<h2 id="通知"><a href="#通知" class="headerlink" title="通知"></a>通知</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/notifiers/notifications.html</a></p>
+<h2 id="Toasts"><a href="#Toasts" class="headerlink" title="Toasts"></a>Toasts</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/notifiers/toasts.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/notifiers/toasts.html</a></p>
+<h2 id="搜索-Search-Overview"><a href="#搜索-Search-Overview" class="headerlink" title="搜索 Search Overview"></a>搜索 Search Overview</h2><p><a href="https://developer.android.google.cn/guide/topics/search/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/search/index.html</a></p>
+<h2 id="创建搜索界面-Creating-a-Search-Interface"><a href="#创建搜索界面-Creating-a-Search-Interface" class="headerlink" title="创建搜索界面 Creating a Search Interface"></a>创建搜索界面 Creating a Search Interface</h2><p><a href="https://developer.android.google.cn/guide/topics/search/search-dialog.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/search/search-dialog.html</a></p>
+<h2 id="添加近期查询建议-Adding-Recent-Query-Suggestions"><a href="#添加近期查询建议-Adding-Recent-Query-Suggestions" class="headerlink" title="添加近期查询建议 Adding Recent Query Suggestions"></a>添加近期查询建议 Adding Recent Query Suggestions</h2><p><a href="https://developer.android.google.cn/guide/topics/search/adding-recent-query-suggestions.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/search/adding-recent-query-suggestions.html</a></p>
+<h2 id="添加自定义建议-Adding-Custom-Suggestions"><a href="#添加自定义建议-Adding-Custom-Suggestions" class="headerlink" title="添加自定义建议 Adding Custom Suggestions"></a>添加自定义建议 Adding Custom Suggestions</h2><p><a href="https://developer.android.google.cn/guide/topics/search/adding-custom-suggestions.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/search/adding-custom-suggestions.html</a></p>
+<h2 id="可搜索配置-Searchable-Configuration"><a href="#可搜索配置-Searchable-Configuration" class="headerlink" title="可搜索配置 Searchable Configuration"></a>可搜索配置 Searchable Configuration</h2><p><a href="https://developer.android.google.cn/guide/topics/search/searchable-config.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/search/searchable-config.html</a></p>
+<h2 id="多窗口支持"><a href="#多窗口支持" class="headerlink" title="多窗口支持"></a>多窗口支持</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/multi-window.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/multi-window.html</a></p>
+<h2 id="拖放"><a href="#拖放" class="headerlink" title="拖放"></a>拖放</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/drag-drop.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/drag-drop.html</a></p>
+<h2 id="无障碍功能-Accessibility"><a href="#无障碍功能-Accessibility" class="headerlink" title="无障碍功能 Accessibility"></a>无障碍功能 Accessibility</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/accessibility/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/accessibility/index.html</a></p>
+<h2 id="为应用设置无障碍功能-Making-Apps-More-Accessible"><a href="#为应用设置无障碍功能-Making-Apps-More-Accessible" class="headerlink" title="为应用设置无障碍功能 Making Apps More Accessible"></a>为应用设置无障碍功能 Making Apps More Accessible</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/accessibility/apps.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/accessibility/apps.html</a></p>
+<h2 id="无障碍功能开发者检查单-Accessibility-Developer-Checklist"><a href="#无障碍功能开发者检查单-Accessibility-Developer-Checklist" class="headerlink" title="无障碍功能开发者检查单 Accessibility Developer Checklist"></a>无障碍功能开发者检查单 Accessibility Developer Checklist</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/accessibility/checklist.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/accessibility/checklist.html</a></p>
+<h2 id="构建无障碍服务-Building-Accessibility-Services"><a href="#构建无障碍服务-Building-Accessibility-Services" class="headerlink" title="构建无障碍服务 Building Accessibility Services"></a>构建无障碍服务 Building Accessibility Services</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/accessibility/services.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/accessibility/services.html</a></p>
+<h2 id="样式和主题"><a href="#样式和主题" class="headerlink" title="样式和主题"></a>样式和主题</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/themes.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/themes.html</a></p>
+<h2 id="自定义组件-Custom-Components"><a href="#自定义组件-Custom-Components" class="headerlink" title="自定义组件 Custom Components"></a>自定义组件 Custom Components</h2><p><a href="https://developer.android.google.cn/guide/topics/ui/custom-components.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/ui/custom-components.html</a></p>
+<h2 id="动画和图形-Animation-and-Graphics"><a href="#动画和图形-Animation-and-Graphics" class="headerlink" title="动画和图形 Animation and Graphics"></a>动画和图形 Animation and Graphics</h2><p><a href="https://developer.android.google.cn/guide/topics/graphics/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/graphics/index.html</a></p>
+<h2 id="概览-Overview"><a href="#概览-Overview" class="headerlink" title="概览 Overview"></a>概览 Overview</h2><p><a href="https://developer.android.google.cn/guide/topics/graphics/overview.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/graphics/overview.html</a></p>
+<h2 id="属性动画-Property-Animation"><a href="#属性动画-Property-Animation" class="headerlink" title="属性动画 Property Animation"></a>属性动画 Property Animation</h2><p><a href="https://developer.android.google.cn/guide/topics/graphics/prop-animation.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/graphics/prop-animation.html</a></p>
+<h2 id="视图动画-View-Animation"><a href="#视图动画-View-Animation" class="headerlink" title="视图动画 View Animation"></a>视图动画 View Animation</h2><p><a href="https://developer.android.google.cn/guide/topics/graphics/view-animation.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/graphics/view-animation.html</a></p>
+<h2 id="可绘制动画-Drawable-Animation"><a href="#可绘制动画-Drawable-Animation" class="headerlink" title="可绘制动画 Drawable Animation"></a>可绘制动画 Drawable Animation</h2><p><a href="https://developer.android.google.cn/guide/topics/graphics/drawable-animation.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/graphics/drawable-animation.html</a></p>
+<h2 id="画布和可绘制对象-Canvas-and-Drawables"><a href="#画布和可绘制对象-Canvas-and-Drawables" class="headerlink" title="画布和可绘制对象 Canvas and Drawables"></a>画布和可绘制对象 Canvas and Drawables</h2><p><a href="https://developer.android.google.cn/guide/topics/graphics/2d-graphics.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/graphics/2d-graphics.html</a></p>
+<h2 id="OpenGL-ES"><a href="#OpenGL-ES" class="headerlink" title="OpenGL ES"></a>OpenGL ES</h2><p><a href="https://developer.android.google.cn/guide/topics/graphics/opengl.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/graphics/opengl.html</a></p>
+<h2 id="硬件加速-Hardware-Acceleration"><a href="#硬件加速-Hardware-Acceleration" class="headerlink" title="硬件加速 Hardware Acceleration"></a>硬件加速 Hardware Acceleration</h2><p><a href="https://developer.android.google.cn/guide/topics/graphics/hardware-accel.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/graphics/hardware-accel.html</a></p>
+<h2 id="计算-Computation"><a href="#计算-Computation" class="headerlink" title="计算 Computation"></a>计算 Computation</h2><p><a href="https://developer.android.google.cn/guide/topics/renderscript/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/renderscript/index.html</a></p>
+<h2 id="RenderScript"><a href="#RenderScript" class="headerlink" title="RenderScript"></a>RenderScript</h2><p><a href="https://developer.android.google.cn/guide/topics/renderscript/compute.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/renderscript/compute.html</a></p>
+<h2 id="高级-RenderScript"><a href="#高级-RenderScript" class="headerlink" title="高级 RenderScript"></a>高级 RenderScript</h2><p><a href="https://developer.android.google.cn/guide/topics/renderscript/advanced.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/renderscript/advanced.html</a></p>
+<h2 id="Runtime-API-参考"><a href="#Runtime-API-参考" class="headerlink" title="Runtime API 参考"></a>Runtime API 参考</h2><p><a href="https://developer.android.google.cn/guide/topics/renderscript/reference/overview.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/renderscript/reference/overview.html</a></p>
+<h2 id="媒体和相机-Media-and-Camera"><a href="#媒体和相机-Media-and-Camera" class="headerlink" title="媒体和相机 Media and Camera"></a>媒体和相机 Media and Camera</h2><p><a href="https://developer.android.google.cn/guide/topics/media/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/media/index.html</a></p>
+<h2 id="媒体回放-MediaPlayer"><a href="#媒体回放-MediaPlayer" class="headerlink" title="媒体回放 MediaPlayer"></a>媒体回放 MediaPlayer</h2><p><a href="https://developer.android.google.cn/guide/topics/media/mediaplayer.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/media/mediaplayer.html</a></p>
+<h2 id="媒体路由器-MediaRouter-API"><a href="#媒体路由器-MediaRouter-API" class="headerlink" title="媒体路由器 MediaRouter API"></a>媒体路由器 MediaRouter API</h2><p><a href="https://developer.android.google.cn/guide/topics/media/mediarouter.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/media/mediarouter.html</a></p>
+<h2 id="媒体路由提供程序-Media-Route-Provider-API"><a href="#媒体路由提供程序-Media-Route-Provider-API" class="headerlink" title="媒体路由提供程序 Media Route Provider API"></a>媒体路由提供程序 Media Route Provider API</h2><p><a href="https://developer.android.google.cn/guide/topics/media/mediarouteprovider.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/media/mediarouteprovider.html</a></p>
+<h2 id="ExoPlayer"><a href="#ExoPlayer" class="headerlink" title="ExoPlayer"></a>ExoPlayer</h2><p><a href="https://developer.android.google.cn/guide/topics/media/exoplayer.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/media/exoplayer.html</a></p>
+<h2 id="支持的媒体格式-Supported-Media-Formats"><a href="#支持的媒体格式-Supported-Media-Formats" class="headerlink" title="支持的媒体格式 Supported Media Formats"></a>支持的媒体格式 Supported Media Formats</h2><p><a href="https://developer.android.google.cn/guide/topics/media/media-formats.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/media/media-formats.html</a></p>
+<h2 id="音频采集-MediaRecorder"><a href="#音频采集-MediaRecorder" class="headerlink" title="音频采集 MediaRecorder"></a>音频采集 MediaRecorder</h2><p><a href="https://developer.android.google.cn/guide/topics/media/mediarecorder.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/media/mediarecorder.html</a></p>
+<h2 id="相机-Camera-API"><a href="#相机-Camera-API" class="headerlink" title="相机 Camera API"></a>相机 Camera API</h2><p><a href="https://developer.android.google.cn/guide/topics/media/camera.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/media/camera.html</a></p>
+<h2 id="位置和传感器-Location-and-Sensors-APIs"><a href="#位置和传感器-Location-and-Sensors-APIs" class="headerlink" title="位置和传感器 Location and Sensors APIs"></a>位置和传感器 Location and Sensors APIs</h2><p><a href="https://developer.android.google.cn/guide/topics/sensors/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/sensors/index.html</a></p>
+<h2 id="位置和地图-Location-and-Maps"><a href="#位置和地图-Location-and-Maps" class="headerlink" title="位置和地图 Location and Maps"></a>位置和地图 Location and Maps</h2><p><a href="https://developer.android.google.cn/guide/topics/location/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/location/index.html</a></p>
+<h2 id="位置策略-Location-Strategies"><a href="#位置策略-Location-Strategies" class="headerlink" title="位置策略 Location Strategies"></a>位置策略 Location Strategies</h2><p><a href="https://developer.android.google.cn/guide/topics/location/strategies.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/location/strategies.html</a></p>
+<h2 id="传感器概览-Sensors-Overview"><a href="#传感器概览-Sensors-Overview" class="headerlink" title="传感器概览 Sensors Overview"></a>传感器概览 Sensors Overview</h2><p><a href="https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/sensors/sensors_overview.html</a></p>
+<h2 id="运动传感器-Motion-Sensors"><a href="#运动传感器-Motion-Sensors" class="headerlink" title="运动传感器 Motion Sensors"></a>运动传感器 Motion Sensors</h2><p><a href="https://developer.android.google.cn/guide/topics/sensors/sensors_motion.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/sensors/sensors_motion.html</a></p>
+<h2 id="位置传感器-Position-Sensors"><a href="#位置传感器-Position-Sensors" class="headerlink" title="位置传感器 Position Sensors"></a>位置传感器 Position Sensors</h2><p><a href="https://developer.android.google.cn/guide/topics/sensors/sensors_position.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/sensors/sensors_position.html</a></p>
+<h2 id="环境传感器-Environment-Sensors"><a href="#环境传感器-Environment-Sensors" class="headerlink" title="环境传感器 Environment Sensors"></a>环境传感器 Environment Sensors</h2><p><a href="https://developer.android.google.cn/guide/topics/sensors/sensors_environment.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/sensors/sensors_environment.html</a></p>
+<h2 id="连接-Connectivity"><a href="#连接-Connectivity" class="headerlink" title="连接 Connectivity"></a>连接 Connectivity</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/index.html</a></p>
+<h2 id="蓝牙"><a href="#蓝牙" class="headerlink" title="蓝牙"></a>蓝牙</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/bluetooth.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/bluetooth.html</a></p>
+<h2 id="蓝牙低功耗-Bluetooth-Low-Energy"><a href="#蓝牙低功耗-Bluetooth-Low-Energy" class="headerlink" title="蓝牙低功耗 Bluetooth Low Energy"></a>蓝牙低功耗 Bluetooth Low Energy</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/bluetooth-le.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/bluetooth-le.html</a></p>
+<h2 id="NFC"><a href="#NFC" class="headerlink" title="NFC"></a>NFC</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/nfc/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/nfc/index.html</a></p>
+<h2 id="NFC-基础知识-NFC-Basics"><a href="#NFC-基础知识-NFC-Basics" class="headerlink" title="NFC 基础知识 NFC Basics"></a>NFC 基础知识 NFC Basics</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/nfc/nfc.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/nfc/nfc.html</a></p>
+<h2 id="高级-NFC-Advanced-NFC"><a href="#高级-NFC-Advanced-NFC" class="headerlink" title="高级 NFC Advanced NFC"></a>高级 NFC Advanced NFC</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/nfc/advanced-nfc.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/nfc/advanced-nfc.html</a></p>
+<h2 id="基于主机的卡模拟-Host-based-Card-Emulation"><a href="#基于主机的卡模拟-Host-based-Card-Emulation" class="headerlink" title="基于主机的卡模拟 Host-based Card Emulation"></a>基于主机的卡模拟 Host-based Card Emulation</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/nfc/hce.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/nfc/hce.html</a></p>
+<h2 id="Wi-Fi-P2P"><a href="#Wi-Fi-P2P" class="headerlink" title="Wi-Fi P2P"></a>Wi-Fi P2P</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/wifip2p.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/wifip2p.html</a></p>
+<h2 id="USB"><a href="#USB" class="headerlink" title="USB"></a>USB</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/usb/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/usb/index.html</a></p>
+<h2 id="配件-USB-Accessory"><a href="#配件-USB-Accessory" class="headerlink" title="配件 USB Accessory"></a>配件 USB Accessory</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/usb/accessory.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/usb/accessory.html</a></p>
+<h2 id="主机-USB-Host"><a href="#主机-USB-Host" class="headerlink" title="主机 USB Host"></a>主机 USB Host</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/usb/host.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/usb/host.html</a></p>
+<h2 id="SIP-Session-Initiation-Protocol"><a href="#SIP-Session-Initiation-Protocol" class="headerlink" title="SIP Session Initiation Protocol"></a>SIP Session Initiation Protocol</h2><p><a href="https://developer.android.google.cn/guide/topics/connectivity/sip.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/connectivity/sip.html</a></p>
+<h2 id="文本和输入-Text-and-Input"><a href="#文本和输入-Text-and-Input" class="headerlink" title="文本和输入 Text and Input"></a>文本和输入 Text and Input</h2><p><a href="https://developer.android.google.cn/guide/topics/text/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/text/index.html</a></p>
+<h2 id="复制和粘贴-Copy-and-Paste"><a href="#复制和粘贴-Copy-and-Paste" class="headerlink" title="复制和粘贴 Copy and Paste"></a>复制和粘贴 Copy and Paste</h2><p><a href="https://developer.android.google.cn/guide/topics/text/copy-paste.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/text/copy-paste.html</a></p>
+<h2 id="创建-IME-Creating-an-Input-Method"><a href="#创建-IME-Creating-an-Input-Method" class="headerlink" title="创建 IME Creating an Input Method"></a>创建 IME Creating an Input Method</h2><p><a href="https://developer.android.google.cn/guide/topics/text/creating-input-method.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/text/creating-input-method.html</a></p>
+<h2 id="拼写检查程序-Spelling-Checker-Framework"><a href="#拼写检查程序-Spelling-Checker-Framework" class="headerlink" title="拼写检查程序 Spelling Checker Framework"></a>拼写检查程序 Spelling Checker Framework</h2><p><a href="https://developer.android.google.cn/guide/topics/text/spell-checker-framework.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/text/spell-checker-framework.html</a></p>
+<h2 id="数据存储-Data-Storage"><a href="#数据存储-Data-Storage" class="headerlink" title="数据存储 Data Storage"></a>数据存储 Data Storage</h2><p><a href="https://developer.android.google.cn/guide/topics/data/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/data/index.html</a></p>
+<h2 id="存储选项"><a href="#存储选项" class="headerlink" title="存储选项"></a>存储选项</h2><p><a href="https://developer.android.google.cn/guide/topics/data/data-storage.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/data/data-storage.html</a></p>
+<h2 id="数据备份-Backing-up-App-Data-to-the-Cloud"><a href="#数据备份-Backing-up-App-Data-to-the-Cloud" class="headerlink" title="数据备份 Backing up App Data to the Cloud"></a>数据备份 Backing up App Data to the Cloud</h2><p><a href="https://developer.android.google.cn/guide/topics/data/backup.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/data/backup.html</a></p>
+<h2 id="应用安装位置-App-Install-Location"><a href="#应用安装位置-App-Install-Location" class="headerlink" title="应用安装位置 App Install Location"></a>应用安装位置 App Install Location</h2><p><a href="https://developer.android.google.cn/guide/topics/data/install-location.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/data/install-location.html</a></p>
+<h2 id="Android-库"><a href="#Android-库" class="headerlink" title="Android 库"></a>Android 库</h2><p><a href="https://developer.android.google.cn/topic/libraries/index.html" target="_blank" rel="external">https://developer.android.google.cn/topic/libraries/index.html</a></p>
+<h2 id="支持库"><a href="#支持库" class="headerlink" title="支持库"></a>支持库</h2><p><a href="https://developer.android.google.cn/topic/libraries/support-library/index.html" target="_blank" rel="external">https://developer.android.google.cn/topic/libraries/support-library/index.html</a></p>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p><a href="https://developer.android.google.cn/topic/libraries/support-library/features.html" target="_blank" rel="external">https://developer.android.google.cn/topic/libraries/support-library/features.html</a></p>
+<h2 id="设置-1"><a href="#设置-1" class="headerlink" title="设置"></a>设置</h2><p><a href="https://developer.android.google.cn/topic/libraries/support-library/setup.html" target="_blank" rel="external">https://developer.android.google.cn/topic/libraries/support-library/setup.html</a></p>
+<h2 id="修订历史记录-Recent-Support-Library-Revisions"><a href="#修订历史记录-Recent-Support-Library-Revisions" class="headerlink" title="修订历史记录 Recent Support Library Revisions"></a>修订历史记录 Recent Support Library Revisions</h2><p><a href="https://developer.android.google.cn/topic/libraries/support-library/revisions.html" target="_blank" rel="external">https://developer.android.google.cn/topic/libraries/support-library/revisions.html</a></p>
+<h2 id="数据绑定库-Data-Binding-Library"><a href="#数据绑定库-Data-Binding-Library" class="headerlink" title="数据绑定库 Data Binding Library"></a>数据绑定库 Data Binding Library</h2><p><a href="https://developer.android.google.cn/topic/libraries/data-binding/index.html" target="_blank" rel="external">https://developer.android.google.cn/topic/libraries/data-binding/index.html</a></p>
+<h2 id="测试支持库"><a href="#测试支持库" class="headerlink" title="测试支持库"></a>测试支持库</h2><p><a href="https://developer.android.google.cn/topic/libraries/testing-support-library/index.html" target="_blank" rel="external">https://developer.android.google.cn/topic/libraries/testing-support-library/index.html</a></p>
+<h2 id="管理-Administration"><a href="#管理-Administration" class="headerlink" title="管理 Administration"></a>管理 Administration</h2><p><a href="https://developer.android.google.cn/guide/topics/admin/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/admin/index.html</a></p>
+<h2 id="设备政策-Device-Administration"><a href="#设备政策-Device-Administration" class="headerlink" title="设备政策 Device Administration"></a>设备政策 Device Administration</h2><p><a href="https://developer.android.google.cn/guide/topics/admin/device-admin.html" target="_blank" rel="external">https://developer.android.google.cn/guide/topics/admin/device-admin.html</a></p>
+<h2 id="网络应用-Web-Apps"><a href="#网络应用-Web-Apps" class="headerlink" title="网络应用 Web Apps"></a>网络应用 Web Apps</h2><p><a href="https://developer.android.google.cn/guide/webapps/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/webapps/index.html</a></p>
+<h2 id="在网络应用中支持不同屏幕-Supporting-Different-Screens-in-Web-Apps"><a href="#在网络应用中支持不同屏幕-Supporting-Different-Screens-in-Web-Apps" class="headerlink" title="在网络应用中支持不同屏幕 Supporting Different Screens in Web Apps"></a>在网络应用中支持不同屏幕 Supporting Different Screens in Web Apps</h2><p><a href="https://developer.android.google.cn/guide/webapps/targeting.html" target="_blank" rel="external">https://developer.android.google.cn/guide/webapps/targeting.html</a></p>
+<h2 id="在-WebView-中构建网络应用-Building-Web-Apps-in-WebView"><a href="#在-WebView-中构建网络应用-Building-Web-Apps-in-WebView" class="headerlink" title="在 WebView 中构建网络应用 Building Web Apps in WebView"></a>在 WebView 中构建网络应用 Building Web Apps in WebView</h2><p><a href="https://developer.android.google.cn/guide/webapps/webview.html" target="_blank" rel="external">https://developer.android.google.cn/guide/webapps/webview.html</a></p>
+<h2 id="迁移到-Android-4-4-中的-WebView-Migrating-to-WebView-in-Android-4-4"><a href="#迁移到-Android-4-4-中的-WebView-Migrating-to-WebView-in-Android-4-4" class="headerlink" title="迁移到 Android 4.4 中的 WebView Migrating to WebView in Android 4.4"></a>迁移到 Android 4.4 中的 WebView Migrating to WebView in Android 4.4</h2><p><a href="https://developer.android.google.cn/guide/webapps/migrating.html" target="_blank" rel="external">https://developer.android.google.cn/guide/webapps/migrating.html</a></p>
+<h2 id="调试网络应用-Debugging-Web-Apps"><a href="#调试网络应用-Debugging-Web-Apps" class="headerlink" title="调试网络应用 Debugging Web Apps"></a>调试网络应用 Debugging Web Apps</h2><p><a href="https://developer.android.google.cn/guide/webapps/debugging.html" target="_blank" rel="external">https://developer.android.google.cn/guide/webapps/debugging.html</a></p>
+<h2 id="网络应用最佳做法-Best-Practices-for-Web-Apps"><a href="#网络应用最佳做法-Best-Practices-for-Web-Apps" class="headerlink" title="网络应用最佳做法 Best Practices for Web Apps"></a>网络应用最佳做法 Best Practices for Web Apps</h2><p><a href="https://developer.android.google.cn/guide/webapps/best-practices.html" target="_blank" rel="external">https://developer.android.google.cn/guide/webapps/best-practices.html</a></p>
+<h2 id="最佳实践-Best-Practices"><a href="#最佳实践-Best-Practices" class="headerlink" title="最佳实践 Best Practices"></a>最佳实践 Best Practices</h2><p><a href="https://developer.android.google.cn/guide/practices/index.html" target="_blank" rel="external">https://developer.android.google.cn/guide/practices/index.html</a></p>
+<h2 id="支持多种屏幕"><a href="#支持多种屏幕" class="headerlink" title="支持多种屏幕"></a>支持多种屏幕</h2><p><a href="https://developer.android.google.cn/guide/practices/screens_support.html" target="_blank" rel="external">https://developer.android.google.cn/guide/practices/screens_support.html</a></p>
+<h2 id="分配到特定屏幕-Distributing-to-Specific-Screens"><a href="#分配到特定屏幕-Distributing-to-Specific-Screens" class="headerlink" title="分配到特定屏幕 Distributing to Specific Screens"></a>分配到特定屏幕 Distributing to Specific Screens</h2><p><a href="https://developer.android.google.cn/guide/practices/screens-distribution.html" target="_blank" rel="external">https://developer.android.google.cn/guide/practices/screens-distribution.html</a></p>
+<h2 id="屏幕兼容性模式-Screen-Compatibility-Mode"><a href="#屏幕兼容性模式-Screen-Compatibility-Mode" class="headerlink" title="屏幕兼容性模式 Screen Compatibility Mode"></a>屏幕兼容性模式 Screen Compatibility Mode</h2><p><a href="https://developer.android.google.cn/guide/practices/screen-compat-mode.html" target="_blank" rel="external">https://developer.android.google.cn/guide/practices/screen-compat-mode.html</a></p>
+<h2 id="支持平板电脑和手机-Supporting-Tablets-and-Handsets"><a href="#支持平板电脑和手机-Supporting-Tablets-and-Handsets" class="headerlink" title="支持平板电脑和手机 Supporting Tablets and Handsets"></a>支持平板电脑和手机 Supporting Tablets and Handsets</h2><p><a href="https://developer.android.google.cn/guide/practices/tablets-and-handsets.html" target="_blank" rel="external">https://developer.android.google.cn/guide/practices/tablets-and-handsets.html</a></p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/Blog/2018/02/05/腾讯直播/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/Blog/2017/10/11/获取已安装APP的apk文件/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/Blog/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/Blog/img/avatar.png" alt="ToSkyline's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        854350704@qq.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto:854350704@qq.com" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/Blog/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/Blog/categories/Cocos2d/">Cocos2d<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/Gradle实践/">Gradle实践<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/Retrofit/">Retrofit<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/hexo/">hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/关联/">关联<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/反编译/">反编译<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/实用/">实用<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/实用/RxJava2/">RxJava2<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/实用工具/">实用工具<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/工具/">工具<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/总结/">总结<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/技巧/">技巧<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/插件化/">插件化<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/Blog/categories/支付/">支付<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/Blog/archives" title="归纳">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                归纳
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/Blog/tags" title="标签">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                标签
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/Blog/about" title="关于作者">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于作者
+            </a>
+        </li>
+        
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+        <a href="http://weibo.com/p/1005053645413757/home?from=page_100505&amp;mod=TAB&amp;is_all=1#place" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(undefinedweibo.svg);">
+                <span class="visuallyhidden">Weibo</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/SkylineVagrancy" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(undefinedgithub.svg);">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+        <a href="https://www.linkedin.com/in/%E4%BF%8A%E9%B9%8F-%E5%91%A8-b60072104/" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(undefinedlinkedin.svg);">
+                <span class="visuallyhidden">LinkedIn</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Zhihu -->
+    
+        <a href="https://www.zhihu.com/people/zhou-jun-peng-64-67" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(undefinedzhihu.svg);">
+                <span class="visuallyhidden">Zhihu</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;周俊鹏的博客
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+
+    <script src="/Blog/js/lazyload.min.js"></script>
+    <script src="/Blog/js/js.min.js"></script>
+
+
+
+    <script src="/Blog/js/nprogress.js"></script>
+
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script src="/Blog/js/smoothscroll.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
