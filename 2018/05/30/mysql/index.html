@@ -404,43 +404,41 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <h2 id="重置密码"><a href="#重置密码" class="headerlink" title="重置密码"></a>重置密码</h2><ol>
-<li>关闭MySQL服务</li>
-</ol>
-<p><code>/usr/local/mysql/support-files/mysql.server</code></p>
-<ol>
-<li>获取权限 </li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd /usr/local/mysql/bin 进入目录</div></pre></td></tr></table></figure>
-<ol>
-<li>获取权限</li>
-</ol>
-<p><code>sudo su</code></p>
-<ol>
-<li>重启服务器</li>
-</ol>
-<p><code>./mysqld_safe --skip-grant-tables</code></p>
-<ol>
-<li>重开一个终端</li>
-</ol>
-<p><code>alias mysql=/usr/local/mysql/bin/mysql</code></p>
-<ol>
-<li>输入mysql 进入MySQL命令模式</li>
+<li><p>关闭MySQL服务</p>
+<p> <code>/usr/local/mysql/support-files/mysql.server</code></p>
+</li>
+<li><p>获取权限 </p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd /usr/local/mysql/bin 进入目录</div></pre></td></tr></table></figure>
+</li>
+<li><p>获取权限</p>
+<p> <code>sudo su</code></p>
+</li>
+<li><p>重启服务器</p>
+<p> <code>./mysqld_safe --skip-grant-tables</code></p>
+</li>
+<li><p>重开一个终端</p>
+<p> <code>alias mysql=/usr/local/mysql/bin/mysql</code></p>
+</li>
+<li><p>输入mysql 进入MySQL命令模式</p>
+</li>
 <li>use MySQL进入数据库</li>
 <li>flush privileges</li>
 <li>set password for ‘root’@’localhost’=password(‘新密码’)</li>
 </ol>
 <h2 id="MySQL常操作"><a href="#MySQL常操作" class="headerlink" title="MySQL常操作"></a>MySQL常操作</h2><ol>
 <li><p>登录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql -u root -p XXX</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql -u root -p XXX</div></pre></td></tr></table></figure>
 </li>
+</ol>
+<ol>
 <li><p>创建用户</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create user &apos;test&apos;@&apos;localhost&apos; identified by &apos;123456&apos;;</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create user &apos;test&apos;@&apos;localhost&apos; identified by &apos;123456&apos;;</div></pre></td></tr></table></figure>
 </li>
 <li><p>允许外网访问</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create user &apos;test&apos;@&apos;%&apos; identified by &apos;123456&apos;;</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">create user &apos;test&apos;@&apos;%&apos; identified by &apos;123456&apos;;</div></pre></td></tr></table></figure>
 </li>
 <li><p>刷新授权</p>
-<p> <code>\flush privileges</code></p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">\flush privileges</div></pre></td></tr></table></figure>
 </li>
 </ol>
 
