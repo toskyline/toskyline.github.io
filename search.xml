@@ -561,7 +561,7 @@
 <p>前面的测试指图片的名称<br>后面的github mark指鼠标放在图片上展示的内容</p>
 </blockquote>
 <h1 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;854350705@qq.com&gt;</div><div class="line">&lt;https:www.baidu.com&gt;</div></pre></td></tr></table></figure>
-<h3 id="自动链接效果"><a href="#自动链接效果" class="headerlink" title="自动链接效果"></a><font color="#ff0000" size="3">自动链接效果</font></h3><p><a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#x38;&#x35;&#x34;&#51;&#x35;&#48;&#x37;&#48;&#x35;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#x6d;">&#x38;&#x35;&#x34;&#51;&#x35;&#48;&#x37;&#48;&#x35;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#x6d;</a>    </p>
+<h3 id="自动链接效果"><a href="#自动链接效果" class="headerlink" title="自动链接效果"></a><font color="#ff0000" size="3">自动链接效果</font></h3><p><a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x38;&#x35;&#52;&#51;&#x35;&#x30;&#55;&#48;&#53;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;">&#x38;&#x35;&#52;&#51;&#x35;&#x30;&#55;&#48;&#53;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#109;</a>    </p>
 <https:www.baidu.com>
 
 
@@ -988,30 +988,6 @@ int width = imageView.getMeasuredWidth();`
     </entry>
     
     <entry>
-      <title><![CDATA[webview调起微信支付宝]]></title>
-      <url>/Blog/2016/10/16/pay/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> 支付 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 微信 </tag>
-            
-            <tag> 支付 </tag>
-            
-            <tag> 支付宝 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[支付分享]]></title>
       <url>/Blog/2016/10/16/share/</url>
       <content type="html"><![CDATA[<p>  最近由于公司想弄一个新手推荐活动，因为是推荐活动，必须借用现在流行的社交软件进行各种分享，只要形式有微信分享到好友或者朋友圈、QQ分享给好友或者空间、微博分享和短信分享等。下面我就跟大家一起聊下在分享的过程中所遇到的各种坑。本文来自于自己的经验，不足的地方还请指正。首先说下我是怎么实现的，然后给大家说下实现过程中应该注意的。</p>
@@ -1140,6 +1116,30 @@ int width = imageView.getMeasuredWidth();`
         <tags>
             
             <tag> gradle </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[webview调起微信支付宝]]></title>
+      <url>/Blog/2016/10/16/pay/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> 支付 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 微信 </tag>
+            
+            <tag> 支付 </tag>
+            
+            <tag> 支付宝 </tag>
             
         </tags>
         
