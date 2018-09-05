@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[MySQL重置密码]]></title>
-      <url>/2018/05/30/mysql/</url>
+      <url>/2018/05/30/mysql%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A0%81/</url>
       <content type="html"><![CDATA[<h2 id="重置密码"><a href="#重置密码" class="headerlink" title="重置密码"></a>重置密码</h2><ol>
 <li>关闭MySQL服务<br><code>/usr/local/mysql/support-files/mysql.server</code></li>
 <li>切换目录<br><code>cd /usr/local/mysql/bin</code></li>
@@ -224,7 +224,7 @@
     </entry>
     
     <entry>
-      <title></title>
+      <title><![CDATA[获取已安装应用的apk文件]]></title>
       <url>/2017/10/11/%E8%8E%B7%E5%8F%96%E5%B7%B2%E5%AE%89%E8%A3%85APP%E7%9A%84apk%E6%96%87%E4%BB%B6/</url>
       <content type="html"><![CDATA[<p>###获取程序包名<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">adb shell pm list packages</div></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ adb shell pm list packages</div><div class="line">package:android</div><div class="line">package:cn.wps.moffice</div><div class="line">package:com.android.backupconfirm</div><div class="line">package:com.android.bluetooth</div><div class="line">package:com.android.browser</div><div class="line">package:com.android.calculator2</div><div class="line">package:com.android.camera</div><div class="line">package:com.android.certinstaller</div><div class="line">package:com.android.contacts</div></pre></td></tr></table></figure>
@@ -233,6 +233,18 @@
 <p>###取出apk<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">adb pull /data/app/com.tence01.mm-1.apk ~/apks</div></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ adb pull /data/app/com.tence01.mm-1.apk ~/apks</div><div class="line">2407 KB/s (25567735 bytes in 10.370s)</div></pre></td></tr></table></figure>]]></content>
       
+        <categories>
+            
+            <category> 总结 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
         
     </entry>
     
@@ -553,7 +565,7 @@
 <p>前面的测试指图片的名称<br>后面的github mark指鼠标放在图片上展示的内容</p>
 </blockquote>
 <h1 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;854350705@qq.com&gt;</div><div class="line">&lt;https:www.baidu.com&gt;</div></pre></td></tr></table></figure>
-<h3 id="自动链接效果"><a href="#自动链接效果" class="headerlink" title="自动链接效果"></a><font color="#ff0000" size="3">自动链接效果</font></h3><p><a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#56;&#x35;&#x34;&#x33;&#53;&#x30;&#55;&#x30;&#53;&#64;&#113;&#x71;&#x2e;&#x63;&#111;&#109;">&#56;&#x35;&#x34;&#x33;&#53;&#x30;&#55;&#x30;&#53;&#64;&#113;&#x71;&#x2e;&#x63;&#111;&#109;</a>    </p>
+<h3 id="自动链接效果"><a href="#自动链接效果" class="headerlink" title="自动链接效果"></a><font color="#ff0000" size="3">自动链接效果</font></h3><p><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x38;&#53;&#x34;&#x33;&#53;&#48;&#55;&#48;&#x35;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#x38;&#53;&#x34;&#x33;&#53;&#48;&#55;&#48;&#x35;&#64;&#113;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a>    </p>
 <https:www.baidu.com>
 
 
@@ -808,37 +820,6 @@ String a=&quot;a&quot;;
     </entry>
     
     <entry>
-      <title><![CDATA[swift学习]]></title>
-      <url>/2016/11/16/swift/</url>
-      <content type="html"><![CDATA[<p>#字段 dictionary<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var animalGroupsDict = [&quot;whales&quot;:&quot;pod&quot;, &quot;geese&quot;:&quot;flock&quot;, &quot;lions&quot;:&quot;pride&quot;]</div><div class="line"></div><div class="line">var groupsDict = [String:String]()</div></pre></td></tr></table></figure></p>
-<p>##常见用法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var lifeSpanDict = [&quot;African Grey Parrot&quot;: 50...70, &quot;Tiger Salamander&quot;: 12...15,</div><div class="line">    &quot;Bottlenose Dolphin&quot;: 20...30]</div><div class="line"></div><div class="line">var averageLifeSpanDict = [String:Range&lt;Int&gt;]()</div></pre></td></tr></table></figure></p>
-<font color="#ff0000" size="3"> … 运算符代表某个区间 ，如 50… 70就是50到70之间的某个数</font>
-
-
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//Adding item to a dictionary</span></div><div class="line"></div><div class="line">animalGrounpsDict[<span class="string">"crows"</span>] = <span class="string">"murder"</span></div><div class="line">animalGrounpsDict[<span class="string">"monkeys"</span>] = <span class="string">"troop"</span></div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//the count method is available to all collections, count方法所有的集合都有</div><div class="line">animalGrounpsDict.count</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//Removing items from a dictionary</div><div class="line">animalGroupsDict[&quot;monkeys&quot;] = nil</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//Update a value </div><div class="line">animalGrounpsDict[&quot;monkeys&quot;] = [&quot;barrel&quot;]</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var group = animalGrounpsDict.updateValue[&quot;gaggle&quot;, forkey:&quot;geese&quot;]</div><div class="line">group.dynamicType （结果为 Optional&lt;String&gt;.Type） </div><div class="line">//首先更新gaggle的种类为geese，并返回 geese ,通过group.dynamicType获取group的类型</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//Retrieving the value for a particular key,获取key对应的值</div><div class="line">let groupOfWhales = animalGroupsDict[&quot;whales&quot;] </div><div class="line"></div><div class="line">if letgrounpOfWhales = animalGroupsDict[“whales”]&#123;</div><div class="line">	// 如果whales对应的value存在</div><div class="line">&#125;else&#123;</div><div class="line">	//如果whales对应的value不存在</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
-      
-        <categories>
-            
-            <category> 总结 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> swift </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[浏览器调起app]]></title>
       <url>/2016/11/16/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B0%83%E8%B5%B7App/</url>
       <content type="html"><![CDATA[<h3 id="现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app-并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。"><a href="#现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app-并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。" class="headerlink" title="现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app,并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。"></a>现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app,并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。</h3><p><strong>服务端代码</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">~&lt;!DOCTYPE html&gt;    </div><div class="line">&lt;html&gt;    </div><div class="line">&lt;body&gt;    </div><div class="line">&lt;a href=&quot;scheme://DIDI/startapp?test=test&quot;&gt;启动应用程序&lt;/a&gt;   </div><div class="line">&lt;/body&gt;    </div><div class="line">&lt;/html&gt;~</div></pre></td></tr></table></figure></p>
@@ -867,22 +848,31 @@ String a=&quot;a&quot;;
     </entry>
     
     <entry>
-      <title><![CDATA[Cocos2D Start]]></title>
-      <url>/2016/10/31/CocosStart/</url>
-      <content type="html"><![CDATA[<p>###创建一个新的cocos项目：</p>
-<p> <code>cocos new 应用名 -p 包名 -l 语言 -d 生成路径</code></p>
+      <title><![CDATA[swift学习]]></title>
+      <url>/2016/11/16/swift/</url>
+      <content type="html"><![CDATA[<p>#字段 dictionary<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var animalGroupsDict = [&quot;whales&quot;:&quot;pod&quot;, &quot;geese&quot;:&quot;flock&quot;, &quot;lions&quot;:&quot;pride&quot;]</div><div class="line"></div><div class="line">var groupsDict = [String:String]()</div></pre></td></tr></table></figure></p>
+<p>##常见用法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var lifeSpanDict = [&quot;African Grey Parrot&quot;: 50...70, &quot;Tiger Salamander&quot;: 12...15,</div><div class="line">    &quot;Bottlenose Dolphin&quot;: 20...30]</div><div class="line"></div><div class="line">var averageLifeSpanDict = [String:Range&lt;Int&gt;]()</div></pre></td></tr></table></figure></p>
+<font color="#ff0000" size="3"> … 运算符代表某个区间 ，如 50… 70就是50到70之间的某个数</font>
+
+
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//Adding item to a dictionary</span></div><div class="line"></div><div class="line">animalGrounpsDict[<span class="string">"crows"</span>] = <span class="string">"murder"</span></div><div class="line">animalGrounpsDict[<span class="string">"monkeys"</span>] = <span class="string">"troop"</span></div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//the count method is available to all collections, count方法所有的集合都有</div><div class="line">animalGrounpsDict.count</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//Removing items from a dictionary</div><div class="line">animalGroupsDict[&quot;monkeys&quot;] = nil</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//Update a value </div><div class="line">animalGrounpsDict[&quot;monkeys&quot;] = [&quot;barrel&quot;]</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var group = animalGrounpsDict.updateValue[&quot;gaggle&quot;, forkey:&quot;geese&quot;]</div><div class="line">group.dynamicType （结果为 Optional&lt;String&gt;.Type） </div><div class="line">//首先更新gaggle的种类为geese，并返回 geese ,通过group.dynamicType获取group的类型</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//Retrieving the value for a particular key,获取key对应的值</div><div class="line">let groupOfWhales = animalGroupsDict[&quot;whales&quot;] </div><div class="line"></div><div class="line">if letgrounpOfWhales = animalGroupsDict[“whales”]&#123;</div><div class="line">	// 如果whales对应的value存在</div><div class="line">&#125;else&#123;</div><div class="line">	//如果whales对应的value不存在</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 ]]></content>
       
         <categories>
             
-            <category> Cocos2d </category>
+            <category> 总结 </category>
             
         </categories>
         
         
         <tags>
             
-            <tag> Cocos2d </tag>
+            <tag> swift </tag>
             
         </tags>
         
