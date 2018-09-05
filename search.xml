@@ -553,7 +553,7 @@
 <p>前面的测试指图片的名称<br>后面的github mark指鼠标放在图片上展示的内容</p>
 </blockquote>
 <h1 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;854350705@qq.com&gt;</div><div class="line">&lt;https:www.baidu.com&gt;</div></pre></td></tr></table></figure>
-<h3 id="自动链接效果"><a href="#自动链接效果" class="headerlink" title="自动链接效果"></a><font color="#ff0000" size="3">自动链接效果</font></h3><p><a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x38;&#x35;&#x34;&#51;&#x35;&#x30;&#55;&#x30;&#x35;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;">&#x38;&#x35;&#x34;&#51;&#x35;&#x30;&#55;&#x30;&#x35;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#109;</a>    </p>
+<h3 id="自动链接效果"><a href="#自动链接效果" class="headerlink" title="自动链接效果"></a><font color="#ff0000" size="3">自动链接效果</font></h3><p><a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#56;&#x35;&#x34;&#x33;&#53;&#x30;&#55;&#x30;&#53;&#64;&#113;&#x71;&#x2e;&#x63;&#111;&#109;">&#56;&#x35;&#x34;&#x33;&#53;&#x30;&#55;&#x30;&#53;&#64;&#113;&#x71;&#x2e;&#x63;&#111;&#109;</a>    </p>
 <https:www.baidu.com>
 
 
@@ -808,34 +808,6 @@ String a=&quot;a&quot;;
     </entry>
     
     <entry>
-      <title><![CDATA[浏览器调起app]]></title>
-      <url>/2016/11/16/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B0%83%E8%B5%B7App/</url>
-      <content type="html"><![CDATA[<h3 id="现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app-并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。"><a href="#现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app-并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。" class="headerlink" title="现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app,并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。"></a>现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app,并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。</h3><p><strong>服务端代码</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">~&lt;!DOCTYPE html&gt;    </div><div class="line">&lt;html&gt;    </div><div class="line">&lt;body&gt;    </div><div class="line">&lt;a href=&quot;scheme://DIDI/startapp?test=test&quot;&gt;启动应用程序&lt;/a&gt;   </div><div class="line">&lt;/body&gt;    </div><div class="line">&lt;/html&gt;~</div></pre></td></tr></table></figure></p>
-<p><strong>Android只需在AndroidManifest.xml文件里面为启动页面添加</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;intent-filter&gt;</div><div class="line">                &lt;action android:name=&quot;android.intent.action.VIEW&quot; /&gt;</div><div class="line">                &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;</div><div class="line">                &lt;category android:name=&quot;android.intent.category.BROWSABLE&quot; /&gt;</div><div class="line">                &lt;data</div><div class="line">                    android:host=&quot;DIDI&quot;</div><div class="line">                    android:scheme=&quot;scheme&quot; /&gt;</div><div class="line">&lt;/intent-filter&gt;</div></pre></td></tr></table></figure>
-<p><strong>当应用启动时</strong></p>
-<p><pre><code><br>getIntent().getDataString();<br></code></pre></p>
-<h3 id="得到的的只就是scheme-DIDI-startapp-test-test，就可以通过得到的值，跳转到App的不同页面。"><a href="#得到的的只就是scheme-DIDI-startapp-test-test，就可以通过得到的值，跳转到App的不同页面。" class="headerlink" title="得到的的只就是scheme://DIDI/startapp?test=test，就可以通过得到的值，跳转到App的不同页面。"></a>得到的的只就是scheme://DIDI/startapp?test=test，就可以通过得到的值，跳转到App的不同页面。</h3><h2 id="唤起格式如下："><a href="#唤起格式如下：" class="headerlink" title="唤起格式如下："></a>唤起格式如下：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~&lt;a href=&quot;[scheme]://[host]/[path]?[query]&quot;&gt;启动应用程序&lt;/a&gt; ~</div></pre></td></tr></table></figure>
-<h2 id="scheme：调起app的标志"><a href="#scheme：调起app的标志" class="headerlink" title="scheme：调起app的标志"></a>scheme：调起app的标志</h2><h2 id="host-与AndroidManifest里面的host保持一致"><a href="#host-与AndroidManifest里面的host保持一致" class="headerlink" title="host:与AndroidManifest里面的host保持一致"></a>host:与AndroidManifest里面的host保持一致</h2>]]></content>
-      
-        <categories>
-            
-            <category> 总结 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> android </tag>
-            
-            <tag> 调起app </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[swift学习]]></title>
       <url>/2016/11/16/swift/</url>
       <content type="html"><![CDATA[<p>#字段 dictionary<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var animalGroupsDict = [&quot;whales&quot;:&quot;pod&quot;, &quot;geese&quot;:&quot;flock&quot;, &quot;lions&quot;:&quot;pride&quot;]</div><div class="line"></div><div class="line">var groupsDict = [String:String]()</div></pre></td></tr></table></figure></p>
@@ -861,6 +833,34 @@ String a=&quot;a&quot;;
         <tags>
             
             <tag> swift </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[浏览器调起app]]></title>
+      <url>/2016/11/16/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B0%83%E8%B5%B7App/</url>
+      <content type="html"><![CDATA[<h3 id="现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app-并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。"><a href="#现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app-并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。" class="headerlink" title="现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app,并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。"></a>现在的h5与Android原生的交互越来越多，为了提升用户的体验，想分享红包或者一些运营活动，都希望能够直接唤起原生的app,并跳转指定的页面。由于Android的浏览器较多，层次不齐，很难适配。下面我介绍的方法，经测试在chrome、uc、魅族自带的浏览器、搜狗浏览器、360浏览器、QQ浏览器、遨游浏览器、火狐浏览器都可适用，甚至可以直接在QQ里面打开，但是在百度浏览器上没有任何反应。</h3><p><strong>服务端代码</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">~&lt;!DOCTYPE html&gt;    </div><div class="line">&lt;html&gt;    </div><div class="line">&lt;body&gt;    </div><div class="line">&lt;a href=&quot;scheme://DIDI/startapp?test=test&quot;&gt;启动应用程序&lt;/a&gt;   </div><div class="line">&lt;/body&gt;    </div><div class="line">&lt;/html&gt;~</div></pre></td></tr></table></figure></p>
+<p><strong>Android只需在AndroidManifest.xml文件里面为启动页面添加</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;intent-filter&gt;</div><div class="line">                &lt;action android:name=&quot;android.intent.action.VIEW&quot; /&gt;</div><div class="line">                &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;</div><div class="line">                &lt;category android:name=&quot;android.intent.category.BROWSABLE&quot; /&gt;</div><div class="line">                &lt;data</div><div class="line">                    android:host=&quot;DIDI&quot;</div><div class="line">                    android:scheme=&quot;scheme&quot; /&gt;</div><div class="line">&lt;/intent-filter&gt;</div></pre></td></tr></table></figure>
+<p><strong>当应用启动时</strong></p>
+<p><pre><code><br>getIntent().getDataString();<br></code></pre></p>
+<h3 id="得到的的只就是scheme-DIDI-startapp-test-test，就可以通过得到的值，跳转到App的不同页面。"><a href="#得到的的只就是scheme-DIDI-startapp-test-test，就可以通过得到的值，跳转到App的不同页面。" class="headerlink" title="得到的的只就是scheme://DIDI/startapp?test=test，就可以通过得到的值，跳转到App的不同页面。"></a>得到的的只就是scheme://DIDI/startapp?test=test，就可以通过得到的值，跳转到App的不同页面。</h3><h2 id="唤起格式如下："><a href="#唤起格式如下：" class="headerlink" title="唤起格式如下："></a>唤起格式如下：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">~&lt;a href=&quot;[scheme]://[host]/[path]?[query]&quot;&gt;启动应用程序&lt;/a&gt; ~</div></pre></td></tr></table></figure>
+<h2 id="scheme：调起app的标志"><a href="#scheme：调起app的标志" class="headerlink" title="scheme：调起app的标志"></a>scheme：调起app的标志</h2><h2 id="host-与AndroidManifest里面的host保持一致"><a href="#host-与AndroidManifest里面的host保持一致" class="headerlink" title="host:与AndroidManifest里面的host保持一致"></a>host:与AndroidManifest里面的host保持一致</h2>]]></content>
+      
+        <categories>
+            
+            <category> 总结 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+            <tag> 调起app </tag>
             
         </tags>
         
