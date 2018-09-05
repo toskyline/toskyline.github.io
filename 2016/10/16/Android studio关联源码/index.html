@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="爱电脑，爱游戏，更爱Beautiful Grill！">
+    <meta name="keyword"  content="undefined">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Android studio关联Gradle源码 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Nothing Is Impossible! </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>ToSkyline</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Nothing Is Impossible! </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Android studio关联Gradle源码
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2016-10-16 10:15:22</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#gradle" title="gradle">gradle</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>###&emsp;&emsp;Android studio都出来这么久了，相信现在的Android开发者大部分都已经在使用了。可能你曾经对Android有多年的开发经验，但是对于gradle这个工具，可能不是很了解，或者之前从来都没接触过。Android studio 对 Gradle也没有自动提示，对于自己从0开始写一个gradle配置文件，还是很难的。或者查看大神代码的时候，对于Gradle的各种配置搞得云里雾里。这个时候就会想，要是能直接在Android studio里面关联源码多好啊。这篇教程就是教你在Android studio里面关联gradle源码。</p>
+<p><img src="http://ww1.sinaimg.cn/large/d948997dgy1fe66977rucj20ec051gln.jpg" alt="android studio查看源码"><br><img src="http://ww1.sinaimg.cn/large/d948997dly1fe66ap7x7wj20g104s748.jpg" alt="源码"></p>
+<p>###&nbsp;&nbsp;&nbsp;&nbsp;打开我们的Gradle文件，发现某个写法我们不是很了解，自然的想到了Android studio的看源码大法。点进去才发现，这是什么啊，没有任何注释，方法和参数都还混淆了，怎么玩？这就是因为我们还没能关联源码，我们打开的是class文件，而不是源码。</p>
+<p>###既然是关联源码，我们首先肯定是要下载源码。</p>
+<ol>
+<li><font color="#ff0000" size="3" face="黑体">查看我们打开的class文件的目录（我的是/Applications/Android Studio.app/Contents/gradle/m2repository/com/android/tools/build/builder/2.3.0)</font>        </li>
+<li><font color="#ff0000" size="3" face="黑体">打开moven网站下载源码，可以在<a href="http://search.maven.org/#search%7Cga%7C1%7C" target="_blank" rel="noopener">maven网站</a>下载</font>    </li>
+<li><font color="#ff0000" size="3" face="黑体">搜索com.android.tools.bulid,找到Builder，并且下载源码</font>     </li>
+<li><font color="#ff0000" size="3" face="黑体">copy下载下来的源码，到第一步对应的路径下，重启或者rebulid 一下，就可以使用Android studio的查看源码大发查看了，有详细的注释，还有科学的命名，配置gradle越来越简单了。</font>
+
+<p><img src="http://ww1.sinaimg.cn/large/d948997dgy1fe66fdgjpjj20xe07wmyb.jpg" alt="关联了源码之后"></p>
+</li>
+</ol>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">donate</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/iconie_alloy">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/ai-er-lan-xue-da">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/3286578617">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/xiaotao.nie.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/AirCloud">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://www.linkedin.com/in/小涛-聂-80964aba">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-linkedin"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'Android studio关联Gradle源码',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
+
+</html>

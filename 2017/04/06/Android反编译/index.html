@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="爱电脑，爱游戏，更爱Beautiful Grill！">
+    <meta name="keyword"  content="undefined">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Android反编译 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Nothing Is Impossible! </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>ToSkyline</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#工具介绍"><span class="toc-text">工具介绍</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取资源文件和XML文件"><span class="toc-text">获取资源文件和XML文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取Java源代码"><span class="toc-text">获取Java源代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#获取AndroidManifest-xml"><span class="toc-text">获取AndroidManifest.xml</span></a>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Nothing Is Impossible! </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Android反编译
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2017-04-06 18:49:38</span></span>
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>工欲善其事必先利其器，反编译apk，首先我们需要必须的工具</p>
+<blockquote>
+<ul>
+<li>apktool                            </li>
+<li>dex2jar</li>
+<li>jd-gui</li>
+<li>AXMLPrinter</li>
+</ul>
+</blockquote>
+<p>我做了一下整理，可以直接在这里下载所需的全部工具 <a href="http://pan.baidu.com/s/1i5mOe1J" target="_blank" rel="noopener">下载链接</a></p>
+<h3 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h3> <font color="#ff0000" size="5"> apktool</font>
+
+<p> 获取资源文件，比如图片或者布局XML文件</p>
+ <font color="#ff0000" size="5">dex2jar</font>
+
+<p> 将class.dex文件转化成jar包</p>
+ <font color="#ff0000" size="5">jd-gui</font>
+
+<p> 查看class.dex转化的jar包<br> <font color="#ff0000" size="5">AXMLPrinter</font></p>
+<p> 还原xml文件</p>
+<h2 id="获取资源文件和XML文件"><a href="#获取资源文件和XML文件" class="headerlink" title="获取资源文件和XML文件"></a>获取资源文件和XML文件</h2><p>apktool获取资源文件：将aapt.exe,apktool.bat,apktool.jar 放到同一目录下，定位到apktool文件夹，运行一下命令：apktool.bat d -f test.apk test</p>
+<blockquote>
+<p>apktool.bat d -f [apk文件] [输出的文件夹]</p>
+</blockquote>
+<p><img src="http://ww1.sinaimg.cn/large/d948997dgy1fed0rojzywj20it0bumx5.jpg" alt="命令行"></p>
+<p>反编译之后会在apktool所在目录下新建一个文件夹，文件夹目录如下<br><img src="http://ww1.sinaimg.cn/large/d948997dgy1fed0sys3gyj20hj07pjr8.jpg" alt="文件夹目录"></p>
+<p><em>如果发现反编译出来的都是smali文件，可能是你使用的是旧的apktool,建议去官方网址下载 <a href="https://ibotpeaches.github.io/Apktool/" target="_blank" rel="noopener">apktool官方下载网址</a>，也可以使用我已经打包好的全套文件<a href="http://pan.baidu.com/s/1i5mOe1J" target="_blank" rel="noopener">百度网盘下载</a></em></p>
+<h2 id="获取Java源代码"><a href="#获取Java源代码" class="headerlink" title="获取Java源代码"></a>获取Java源代码</h2><p>将apk文件更改后缀名为zip或者rar，解压之后目录如下：<br><img src="http://ww1.sinaimg.cn/large/d948997dgy1fed10t94pyj20j50803yg.jpg" alt="解压后文件目录"><br>可以看到，目录下面包含多个.dex文件，一般的小项目都会只有一个.dex文件，我这个是以支付宝为例，项目比较多，进行了分包处理。</p>
+<p><em>在命令行下定位到dex2jar.bat所在的目录，dex2jar [dex文件的路径]</em><br><img src="http://ww1.sinaimg.cn/large/d948997dly1fed16hklqzj20it0buq2z.jpg" alt="dex获取源码"></p>
+<p>在dex所在的目录下会生成一个class_dex2jar.jar文件，运行jd-gui文件夹下的jd-gui.exe ,并且用改工具打开之前生成的class_dex2jar.jar文件就可以查看Java源码啦。<br><img src="http://ww1.sinaimg.cn/large/d948997dgy1fed1aqqimjj20s90jatbu.jpg" alt="Java源码"></p>
+<h2 id="获取AndroidManifest-xml"><a href="#获取AndroidManifest-xml" class="headerlink" title="获取AndroidManifest.xml"></a>获取AndroidManifest.xml</h2><p>打开我们解压后的apk文件夹，你会发现 Android开发必须的 AndroidManifest.xml文件，打开文件：<br><img src="http://ww1.sinaimg.cn/large/d948997dgy1fed1cozh4aj20ub0d6gq7.jpg" alt="AndroidManifest.xml"><br>wf,什么鬼，全是乱码。下面就要用到我们的AXMLPrinter工具来还原AndroidManifest.xml<br>命令行定位到AAXMLPrinter2.jar所在目录，运行下面的命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar AXMLPrinter2.jar AndroidManifest.xml &gt; AndroidManifest2.txt</span><br></pre></td></tr></table></figure></p>
+<p>你会发现在AXMLPrinter2.jar目录下，会生成一个AndroidManifest2.txt，打开AndroidManifest2.txt发现我们能看懂了：<br><img src="http://ww1.sinaimg.cn/large/d948997dly1fed1msw9qjj20uk0jgmxt.jpg" alt="AndroidManifest文件"></p>
+<p>这就是本次与大家分享的Android反编译，希望对大家有用。</p>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">donate</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/iconie_alloy">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/ai-er-lan-xue-da">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/3286578617">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/xiaotao.nie.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/AirCloud">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://www.linkedin.com/in/小涛-聂-80964aba">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-linkedin"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'Android反编译',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
+
+</html>

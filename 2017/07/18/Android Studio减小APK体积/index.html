@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="爱电脑，爱游戏，更爱Beautiful Grill！">
+    <meta name="keyword"  content="undefined">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Studio减小APK体积 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Nothing Is Impossible! </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>ToSkyline</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-ProGuard"><span class="toc-text">1. ProGuard</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Split-Apk"><span class="toc-text">2. Split Apk</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-ReDex"><span class="toc-text">3. ReDex</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-ShrinkResources"><span class="toc-text">4. ShrinkResources</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-resConfigs"><span class="toc-text">5. resConfigs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-Vector-Drawables"><span class="toc-text">6. Vector Drawables</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-WebP-file"><span class="toc-text">7. WebP file</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-优化图片资源"><span class="toc-text">8. 优化图片资源</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Nothing Is Impossible! </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Studio减小APK体积
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2017-07-18 10:55:19</span></span>
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h2 id="1-ProGuard"><a href="#1-ProGuard" class="headerlink" title="1. ProGuard"></a>1. ProGuard</h2><p>Proguard可以删除无效的Java code来减小apk的体积</p>
+<h2 id="2-Split-Apk"><a href="#2-Split-Apk" class="headerlink" title="2. Split Apk"></a>2. Split Apk</h2><p><a href="https://developer.android.com/studio/build/configure-apk-splits.html" target="_blank" rel="noopener">Split Apk</a>谷歌官方支持的，可以为根据设备密度和ABI创建特定的Apk包，大大减少每个apk的体积。</p>
+<h2 id="3-ReDex"><a href="#3-ReDex" class="headerlink" title="3. ReDex"></a>3. ReDex</h2><p>Facebook开源维护的，压缩代码的同时，还可以提高性能</p>
+<h2 id="4-ShrinkResources"><a href="#4-ShrinkResources" class="headerlink" title="4. ShrinkResources"></a>4. ShrinkResources</h2><p>去除无效的资源文件，图片是apk体积的大户，减少图片资源，就能有效的减少apk体积。在build.gradle里面使用</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">release &#123;</span><br><span class="line">...</span><br><span class="line">  shrinkResources <span class="keyword">true</span></span><br><span class="line">...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="5-resConfigs"><a href="#5-resConfigs" class="headerlink" title="5. resConfigs"></a>5. resConfigs</h2><p>当应用不需要支持多国语言的时候，可以通过resConfig去除无用的语言资源，例如下面的配置就只保留了中文和英文的语言资源：</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">defaultConfig &#123;</span><br><span class="line">...</span><br><span class="line">  resConfigs <span class="string">"en"</span>, <span class="string">"zh"</span></span><br><span class="line">...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong></p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">resConfigs <span class="string">"hdpi"</span>, <span class="string">"xhdpi"</span>, <span class="string">"xxhdpi"</span>, <span class="string">"xxxhdpi"</span></span><br></pre></td></tr></table></figure>
+<p><strong>已经在新版本中废弃了，代替方案是在Gradle中使用splits根据不同的ABI以及不同的屏幕密度分别打包</strong></p>
+<h2 id="6-Vector-Drawables"><a href="#6-Vector-Drawables" class="headerlink" title="6. Vector Drawables"></a>6. Vector Drawables</h2><p>尽量使用vector资源，因为Vector资源文件大小，会比图片的小很多</p>
+<h2 id="7-WebP-file"><a href="#7-WebP-file" class="headerlink" title="7. WebP file"></a>7. WebP file</h2><p>使用WebP格式的图片资源，相比PNG和JPEG，WebP在保证质量的同时，压缩率更好。</p>
+<h2 id="8-优化图片资源"><a href="#8-优化图片资源" class="headerlink" title="8. 优化图片资源"></a>8. 优化图片资源</h2><p>可以使用TinyPNG, OptiPNG等压缩图片。</p>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">donate</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/iconie_alloy">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/ai-er-lan-xue-da">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/3286578617">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/xiaotao.nie.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/AirCloud">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://www.linkedin.com/in/小涛-聂-80964aba">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-linkedin"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'Studio减小APK体积',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
+
+</html>

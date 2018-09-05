@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="爱电脑，爱游戏，更爱Beautiful Grill！">
+    <meta name="keyword"  content="undefined">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Gradle实践 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Nothing Is Impossible! </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>ToSkyline</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gradle-task示例"><span class="toc-text">gradle task示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#task之间相互依赖"><span class="toc-text">task之间相互依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#执行顺序"><span class="toc-text">执行顺序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义Property"><span class="toc-text">自定义Property</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#依赖其他moudle"><span class="toc-text">依赖其他moudle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gradle为每个moudle都会生成一个build-gradle，为了管理这些moudle，他还会在根目录下生成一个build-gradle"><span class="toc-text">Gradle为每个moudle都会生成一个build.gradle，为了管理这些moudle，他还会在根目录下生成一个build.gradle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#控制输出名称和路径"><span class="toc-text">控制输出名称和路径</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gradle执行顺序"><span class="toc-text">Gradle执行顺序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#dependsOn"><span class="toc-text">dependsOn</span></a></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Nothing Is Impossible! </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Gradle实践
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2017-07-06 14:07:56</span></span>
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="gradle-task示例"><a href="#gradle-task示例" class="headerlink" title="gradle task示例"></a>gradle task示例</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">task compile &lt;&lt; &#123;</span><br><span class="line">    println <span class="string">"Compiled"</span></span><br><span class="line">&#125;</span><br><span class="line">task clean &lt;&lt; &#123;</span><br><span class="line">    println <span class="string">"Clean"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="task之间相互依赖"><a href="#task之间相互依赖" class="headerlink" title="task之间相互依赖"></a>task之间相互依赖</h3><blockquote>
+<p>compile.dependsOn  clean</p>
+</blockquote>
+<h3 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile.mustRunAfter clean  <span class="comment">//只有执行了clean执行之后就会执行compile</span></span><br></pre></td></tr></table></figure>
+<h3 id="自定义Property"><a href="#自定义Property" class="headerlink" title="自定义Property"></a>自定义Property</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ext.property1 = <span class="string">"this is property1"</span></span><br><span class="line">ext&#123;</span><br><span class="line">	property2 = <span class="string">"this is property2"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="依赖其他moudle"><a href="#依赖其他moudle" class="headerlink" title="依赖其他moudle"></a>依赖其他moudle</h3><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">dependencies</span> &#123;</span><br><span class="line">	<span class="keyword">compile</span> <span class="keyword">project</span>(<span class="string">':library'</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Gradle为每个moudle都会生成一个build-gradle，为了管理这些moudle，他还会在根目录下生成一个build-gradle"><a href="#Gradle为每个moudle都会生成一个build-gradle，为了管理这些moudle，他还会在根目录下生成一个build-gradle" class="headerlink" title="Gradle为每个moudle都会生成一个build.gradle，为了管理这些moudle，他还会在根目录下生成一个build.gradle"></a>Gradle为每个moudle都会生成一个build.gradle，为了管理这些moudle，他还会在根目录下生成一个build.gradle</h3><p><img src="http://ww1.sinaimg.cn/large/d948997dgy1fha5q0bwtrj20hk09ggmv.jpg" alt="allprojexts配置"></p>
+<p><strong>allprojects()方法将repositories配置一次性地应用于所有的module（子Project）和root-project本身，当然也包括定义的Task，这个task配置到所有module里面了和root-project。<br>subprojects()方法用于配置所有的子Project（不包含根Project）</strong></p>
+<p>###引入其他的Gradle文件的task<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apply <span class="keyword">from</span>: <span class="string">'../nuild-config/build.gradle'</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="控制输出名称和路径"><a href="#控制输出名称和路径" class="headerlink" title="控制输出名称和路径"></a>控制输出名称和路径</h3><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">android.applicationVariants.all &#123; variant -&gt;</span><br><span class="line"></span><br><span class="line">    variant.outputs.<span class="keyword">each</span> &#123; output -&gt;</span><br><span class="line">        <span class="keyword">def</span> outputFile = output.outputFile</span><br><span class="line">        <span class="keyword">if</span> (outputFile != <span class="keyword">null</span> &amp;&amp; outputFile.name.endsWith(<span class="string">'.apk'</span>)) &#123;</span><br><span class="line">            <span class="keyword">def</span> fileName = outputFile.name;</span><br><span class="line">            <span class="keyword">if</span> (android.defaultConfig.versionName != <span class="keyword">null</span>) &#123;</span><br><span class="line">                fileName = fileName.replace(<span class="string">".apk"</span>, <span class="string">"-$&#123;android.defaultConfig.versionName&#125;.apk"</span>)</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">project</span>.hasProperty(<span class="string">'OUT_PUT_APK_SUFFIX_PARA'</span>)) &#123;</span><br><span class="line">                fileName = fileName.replace(<span class="string">".apk"</span>, <span class="string">"-$&#123;OUT_PUT_APK_SUFFIX_PARA&#125;.apk"</span>)</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">def</span> today = <span class="keyword">new</span> Date().format(<span class="string">'yyMMddHHmm'</span>);</span><br><span class="line">            fileName = fileName.replace(<span class="string">".apk"</span>, <span class="string">"-$&#123;today&#125;.apk"</span>)</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">project</span>.hasProperty(<span class="string">'OUT_PUT_DIR_PARA'</span>)) &#123;</span><br><span class="line">                <span class="keyword">File</span> output_dir1 = <span class="keyword">file</span>(<span class="string">"$&#123;OUT_PUT_DIR_PARA&#125;"</span>);</span><br><span class="line">                output.outputFile = <span class="keyword">new</span> <span class="keyword">File</span>(output_dir1, fileName)</span><br><span class="line">                <span class="keyword">println</span> <span class="string">"输出文件位置： "</span> + output.outputFile</span><br><span class="line">                <span class="comment">//&#125;</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                output.outputFile = <span class="keyword">new</span> <span class="keyword">File</span>(outputFile.parent, fileName)</span><br><span class="line">                <span class="keyword">println</span> <span class="string">"输出文件位置： "</span> + output.outputFile</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>###拼接字符串<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ext.tem = <span class="string">'tem'</span></span><br><span class="line"><span class="keyword">def</span> name = <span class="string">"my name is $tem"</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="Gradle执行顺序"><a href="#Gradle执行顺序" class="headerlink" title="Gradle执行顺序"></a>Gradle执行顺序</h2><h3 id="dependsOn"><a href="#dependsOn" class="headerlink" title="dependsOn"></a>dependsOn</h3><p><strong>如果我们想执行的task A依赖于task B</strong></p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">task</span> A &lt;&lt; &#123;</span><br><span class="line">	<span class="keyword">println</span> <span class="string">"Hello From A"</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">task</span> B &lt;&lt; &#123;</span><br><span class="line">    <span class="keyword">println</span> <span class="string">"Hello From B"</span></span><br><span class="line">&#125;</span><br><span class="line">A.dependsOn B</span><br></pre></td></tr></table></figure>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">task</span> A &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from A'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> B &#123;</span><br><span class="line">    dependsOn A</span><br><span class="line">    <span class="keyword">doLast</span> &#123;</span><br><span class="line">        <span class="keyword">println</span> <span class="string">'Hello from B'</span>  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这样我们执行Gradle B的时候就会先执行 A,上面两种写法的效果是一样的。</p>
+<blockquote>
+<p>如果我们想在已近存在task依赖中插入我们的task，改怎么办呢？</p>
+</blockquote>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">task</span> A &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from A'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> B &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from B'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> C &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from C'</span>&#125;</span><br><span class="line">B.dependsOn A</span><br><span class="line">C.dependsOn B</span><br></pre></td></tr></table></figure>
+<p><strong>加入我们的新task</strong></p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">task</span> B1 &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from B1'</span>&#125;</span><br><span class="line">B1.dependsOn B</span><br><span class="line">C.dependsOn B1</span><br></pre></td></tr></table></figure>
+<p>执行Gradle c</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">paveldudka$ gradle C</span><br><span class="line">:A</span><br><span class="line">Hello <span class="keyword">from</span> A</span><br><span class="line">:B</span><br><span class="line">Hello <span class="keyword">from</span> B</span><br><span class="line">:B1</span><br><span class="line">Hello <span class="keyword">from</span> B1</span><br><span class="line">:C</span><br><span class="line">Hello <span class="keyword">from</span> C</span><br></pre></td></tr></table></figure>
+<p><img src="http://static.oschina.net/uploads/img/201509/21084247_m1Nh.png" alt="插入依赖"></p>
+<p>###mustRunAfter<br>假设我们有三个task，其中一个依赖其他两个，代码如下：</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">task</span> unit &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from unit tests'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> ui &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from UI tests'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> tests &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from all tests!'</span>&#125;</span><br><span class="line"></span><br><span class="line">tests.dependsOn unit</span><br><span class="line">tests.dependsOn ui</span><br></pre></td></tr></table></figure>
+<p>执行Gradle tests结果</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">paveldudka$ gradle tests</span><br><span class="line">:ui</span><br><span class="line">Hello <span class="keyword">from</span> UI tests</span><br><span class="line">:unit</span><br><span class="line">Hello <span class="keyword">from</span> unit tests</span><br><span class="line">:tests</span><br><span class="line">Hello <span class="keyword">from</span> all tests!</span><br></pre></td></tr></table></figure>
+<p><strong>尽管unit和UI会在tests之前执行，但是UI和unit的执行顺序是不能保证的，虽然看起来是按照字母表的执行，但这依赖于Gradle的默认实现，我们也不清楚具体是怎样的规则，因此如果们有先后顺序的区分，我们就不能依赖这种顺序</strong></p>
+<p><strong>如果我希望unit先执行，然后子啊执行UI，一个解决办法就是UI依赖unit</strong></p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">task</span> unit &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from unit tests'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> ui &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from UI tests'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> tests &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from all tests!'</span>&#125;</span><br><span class="line"></span><br><span class="line">tests.dependsOn unit</span><br><span class="line">tests.dependsOn ui</span><br><span class="line">ui.dependsOn unit</span><br></pre></td></tr></table></figure>
+<p><strong>但是有个问题，我们的UI task并不依赖于 unit ,每次执行UI task的时候都会执行unit，这就要用到 mustRunAfter了。这里指定 ui.mustRunAfter unit,这样如果UI和unit同事存在的时候，Gradle会先执行unit，他们也可以单独执行</strong></p>
+<p>###finalizedBy<br>现在我们有UI和unit两个task，我们希望两个执行完了之后合并输出：</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">task</span> unit &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from unit tests'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> ui &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from UI tests'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> tests &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from all tests!'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> mergeReports &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Merging test reports'</span>&#125;</span><br><span class="line"></span><br><span class="line">tests.dependsOn unit</span><br><span class="line">tests.dependsOn ui</span><br><span class="line">ui.mustRunAfter unit</span><br><span class="line">mergeReports.dependsOn tests</span><br></pre></td></tr></table></figure>
+<p><strong>这个task是能工作，但是看起来好笨啊。mergeReports从用户的角度来看感觉不是特别好。我希望执行tests task就可以获得测试报告，而不必知道mergeReports的存在。当然我可以把merge的逻辑挪到tests task中，但我不想把tests task搞的太臃肿，我还是继续把merge的逻辑放在mergeReports task中。<br>finalizeBy来救场了。顾名思义，finalizeBy就是在task执行完之后要执行的task。修改我们的脚本如下</strong></p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">task</span> unit &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from unit tests'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> ui &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from UI tests'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> tests &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Hello from all tests!'</span>&#125;</span><br><span class="line"><span class="keyword">task</span> mergeReports &lt;&lt; &#123;<span class="keyword">println</span> <span class="string">'Merging test reports'</span>&#125;</span><br><span class="line"></span><br><span class="line">tests.dependsOn unit</span><br><span class="line">tests.dependsOn ui</span><br><span class="line">ui.mustRunAfter unit</span><br><span class="line">mergeReports.dependsOn tests</span><br><span class="line">tests.finalizedBy mergeReports</span><br></pre></td></tr></table></figure>
+<p>现在执行tests task就可以拿到测试报告了：</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">paveldudka$ gradle tests</span><br><span class="line">:unit</span><br><span class="line">Hello <span class="keyword">from</span> unit tests</span><br><span class="line">:ui</span><br><span class="line">Hello <span class="keyword">from</span> UI tests</span><br><span class="line">:tests</span><br><span class="line">Hello <span class="keyword">from</span> all tests!</span><br><span class="line">:mergeReports</span><br><span class="line">Merging test reports</span><br></pre></td></tr></table></figure>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">donate</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/iconie_alloy">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/ai-er-lan-xue-da">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/3286578617">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/xiaotao.nie.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/AirCloud">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://www.linkedin.com/in/小涛-聂-80964aba">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-linkedin"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'Gradle实践',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
+
+</html>

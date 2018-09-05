@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="爱电脑，爱游戏，更爱Beautiful Grill！">
+    <meta name="keyword"  content="undefined">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        Retrofit的简单封装 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Nothing Is Impossible! </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>ToSkyline</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Retrofit"><span class="toc-text">Retrofit</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Retrofit的封装NetUtils"><span class="toc-text">Retrofit的封装NetUtils</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#请求工具类NetLoader"><span class="toc-text">请求工具类NetLoader</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CallBack的封装"><span class="toc-text">CallBack的封装</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Nothing Is Impossible! </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        Retrofit的简单封装
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2017-03-20 18:08:47</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#Retrofit" title="Retrofit">Retrofit</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#封装" title="封装">封装</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2016年，关于retrofit和okhttp这两个话题非常火，retrofit+okhhtp已经成为Android网络请求的主流框架了，看了一下现在公司的项目，还是使用的原始的HttpURLConnection，瞬间感觉有点low，通过自己的学习，决定对公司的网络请求进行一下改造，在这里做一下简单的总结，希望大家多多指正。</p>
+<h1 id="Retrofit"><a href="#Retrofit" class="headerlink" title="Retrofit"></a>Retrofit</h1><p>  retrofit是一个基于okhttp的，适用于Android，Java的网络请求工具。我觉得它其实就是对okhttp做一下统一的封装，方便广大开发者的更快捷、更方便的使用。如果你对retrofit还不是很熟悉，可以去<a href="http://square.github.io/retrofit/" target="_blank" rel="noopener">Retrofit官网</a>了解下，我也会在接下来做个简单的使用说明。它既然这么火，而且已经进行很好的封装了，但是我们为什么还要对它封装呢？因为每个公司的业务不一样，这个框架大而且全，其实很多在我们的业务里面根本使用不到，所以我们需要个性化定制。</p>
+<ol>
+<li><p>首先创建一个网络请求API的Interface    </p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">GitHubService</span> </span>&#123;</span><br><span class="line"> 		<span class="meta">@GET</span>(<span class="string">"users/&#123;user&#125;/repos"</span>)</span><br><span class="line"> 		Call&lt;List&lt;Repo&gt;&gt; listRepos(<span class="meta">@Path</span>(<span class="string">"user"</span>) String user);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>初始化Retrofit,并创建一个GitHubService interface</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">	Retrofit retrofit = new Retrofit.Builder()</span><br><span class="line">    .baseUrl(&quot;https://api.github.com/&quot;)</span><br><span class="line">    .build();</span><br><span class="line"></span><br><span class="line">	GitHubService service = retrofit.create(GitHubService.class);</span><br><span class="line">	```	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">3. 对GitHubService的方法进行同步或者一部的访问，来实现网络的请求(使用enqueue 或者 execute来执行发起请求，enqueue是是异步执行，而 execute是同步执行)</span><br></pre></td></tr></table></figure>
+<p> Call<list<repo>&gt; repos = service.listRepos(“octocat”);</list<repo></p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">上面就是官网对retrofit的简单讲解，下面就进行我们的简单封装。</span><br><span class="line"># Interface的改造</span><br><span class="line">因为公司的网络请求都是在common包里面处理的，而和这个包是不会经常改动的，但是每次增加一个求情，都要改动一下common包里面的网络请求的Interface，这个不利于模块的解耦。下面是我对Interface的改造：	</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">public interface NetInterface &#123;</span><br><span class="line">    @GET</span><br><span class="line">    Call get(@Url String url);</span><br><span class="line"></span><br><span class="line">    @POST</span><br><span class="line">    Call post(@Url String url, @Body RequestBody body);</span><br><span class="line"></span><br><span class="line">    @Multipart</span><br><span class="line">    @POST</span><br><span class="line">    Call updateFile(@Url String url, @Part MultipartBody.Part file, @PartMap HashMap&lt;String, RequestBody&gt; map);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/d948997dgy1fduncamc8lj21em0bcmzd.jpg" alt="Interface改造"></p>
+<p>定义了三个方法，get、post、updateFile对应网络请求的GET、POST和文件上传，这样每次就只需传入一个url就可以进行网络请求，不用每次都去更改。</p>
+<h1 id="Retrofit的封装NetUtils"><a href="#Retrofit的封装NetUtils" class="headerlink" title="Retrofit的封装NetUtils"></a>Retrofit的封装NetUtils</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">NetUtils</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> NetUtils INSTANCE;</span><br><span class="line">    <span class="keyword">private</span> OkHttpClient mClient;</span><br><span class="line">    <span class="keyword">private</span> Retrofit mRetrofit;</span><br><span class="line">    <span class="keyword">private</span> ArrayList&lt;Call&gt; callLists=<span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">NetUtils</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        OkHttpClient.Builder builder = <span class="keyword">new</span> OkHttpClient.Builder();</span><br><span class="line">        builder.connectTimeout(<span class="number">15</span>, TimeUnit.SECONDS);</span><br><span class="line">        builder.addInterceptor(<span class="keyword">new</span> NetInterceptor());</span><br><span class="line">        mClient = builder.build();</span><br><span class="line">        mRetrofit = <span class="keyword">new</span> Retrofit.Builder()</span><br><span class="line">                .baseUrl(<span class="string">""</span>)</span><br><span class="line">                .addConverterFactory(FastjsonConverterFactory.create())</span><br><span class="line">                .client(mClient)</span><br><span class="line">                .build();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> NetUtils <span class="title">getInstance</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">synchronized</span> (NetUtils.class) &#123;</span><br><span class="line">                <span class="keyword">if</span> (INSTANCE == <span class="keyword">null</span>) &#123;</span><br><span class="line">                    INSTANCE = <span class="keyword">new</span> NetUtils();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> INSTANCE;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Call <span class="title">get</span><span class="params">(String url)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> mRetrofit.create(NetInterface.class).get(url);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Call <span class="title">post</span><span class="params">(String url, FormBody body)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> mRetrofit.create(NetInterface.class).post(url, body);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Call <span class="title">updateFile</span><span class="params">(String url, MultipartBody.Part file, HashMap&lt;String, RequestBody&gt; body)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> mRetrofit.create(NetInterface.class).updateFile(url, file, body);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在这里，可以设置缓存，设置统一的网络拦截器……，我这边写的都比较简单</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">NetInterceptor</span> <span class="keyword">implements</span> <span class="title">Interceptor</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Response <span class="title">intercept</span><span class="params">(Chain chain)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line"></span><br><span class="line">        Response respone = chain.proceed(chain.request());</span><br><span class="line">        Log.d(<span class="string">"TAG"</span>, respone.request().url() + <span class="string">""</span>);</span><br><span class="line">        Log.d(<span class="string">"TAG"</span>, respone.body() + <span class="string">""</span>);</span><br><span class="line">        <span class="keyword">return</span> respone;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>简单的打印url，也可以在这里添加一些通用的参数<br><img src="http://ww1.sinaimg.cn/large/d948997dgy1fdup4d3ficj20vu0b440c.jpg" alt="NetInterceptor"></p>
+<h1 id="请求工具类NetLoader"><a href="#请求工具类NetLoader" class="headerlink" title="请求工具类NetLoader"></a>请求工具类NetLoader</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">NetLoader</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> ArrayList&lt;Call&gt; callList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">private</span> HashMap&lt;String, Call&gt; callMap = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    <span class="keyword">private</span> String TAG = <span class="string">"TAG"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Call <span class="title">get</span><span class="params">(String url, Callback callback)</span> </span>&#123;</span><br><span class="line">        Call call = NetUtils.getInstance().get(url);</span><br><span class="line">        call.enqueue(callback);</span><br><span class="line">        callList.add(call);</span><br><span class="line">        <span class="keyword">return</span> call;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Call <span class="title">get</span><span class="params">(String url, String tag, Callback callback)</span> </span>&#123;</span><br><span class="line">        Call call = NetUtils.getInstance().get(url);</span><br><span class="line">        callList.add(call);</span><br><span class="line">        <span class="keyword">return</span> call;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Call <span class="title">post</span><span class="params">(String url, String postStr, Callback callback)</span> </span>&#123;</span><br><span class="line">        FormBody.Builder builder = <span class="keyword">new</span> FormBody.Builder();</span><br><span class="line">        String[] maps = postStr.split(<span class="string">"&amp;"</span>);</span><br><span class="line">        <span class="keyword">for</span> (String s : maps) &#123;</span><br><span class="line">            String key = s.substring(<span class="number">0</span>, s.indexOf(<span class="string">"="</span>));</span><br><span class="line">            String value = s.substring(s.indexOf(<span class="string">"="</span>) + <span class="number">1</span>, s.length());</span><br><span class="line">            builder.add(key, value);</span><br><span class="line">        &#125;</span><br><span class="line">        Call call = NetUtils.getInstance().post(url, builder.build());</span><br><span class="line">        call.enqueue(callback);</span><br><span class="line">        callList.add(call);</span><br><span class="line">        <span class="keyword">return</span> call;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Call <span class="title">updateFile</span><span class="params">(String url, String postStr, String fileKey, File file, Callback callback)</span> </span>&#123;</span><br><span class="line">        HashMap&lt;String, RequestBody&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        String[] maps = postStr.split(<span class="string">"&amp;"</span>);</span><br><span class="line">        <span class="keyword">for</span> (String s : maps) &#123;</span><br><span class="line">            String key = s.substring(<span class="number">0</span>, s.indexOf(<span class="string">"="</span>));</span><br><span class="line">            String value = s.substring(s.indexOf(<span class="string">"="</span>) + <span class="number">1</span>, s.length());</span><br><span class="line">            RequestBody body = RequestBody.create(MediaType.parse(<span class="string">"text/plain"</span>), value);</span><br><span class="line">            map.put(key, body);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        RequestBody requestFile =</span><br><span class="line">                RequestBody.create(MediaType.parse(<span class="string">"multipart/form-data"</span>), file);</span><br><span class="line">        MultipartBody.Part body =</span><br><span class="line">                MultipartBody.Part.createFormData(fileKey, file.getName(), requestFile);</span><br><span class="line"></span><br><span class="line">        Call call = NetUtils.getInstance().updateFile(url, body, map);</span><br><span class="line">        call.enqueue(callback);</span><br><span class="line">        callList.add(call);</span><br><span class="line">        <span class="keyword">return</span> call;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (Call call : callList) &#123;</span><br><span class="line">            call.cancel();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">removeCall</span><span class="params">(Call call)</span> </span>&#123;</span><br><span class="line">        callList.remove(call);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其实上面的NetUtils已经满足了我们的网络请求，为什么还要把它包装到NetLoader里面呢？原因是为了我们<br>我们可以通过在每个Activity或者Fragment里面新建一个netLoader示例，在destroy方法里面调用netloader. destroy()方法，就可以实现与之周期进行绑定，防止异常。</p>
+<h1 id="CallBack的封装"><a href="#CallBack的封装" class="headerlink" title="CallBack的封装"></a>CallBack的封装</h1><p>我们还可以对请求返回的callback就行同意的处理：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">NetCallBack</span> <span class="keyword">implements</span> <span class="title">Callback</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> WeakReference&lt;Context&gt; reference;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">NetCallBack</span><span class="params">(Context context)</span></span>&#123;</span><br><span class="line">        reference=<span class="keyword">new</span> WeakReference&lt;Context&gt;(context);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onResponse</span><span class="params">(Call call, Response response)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(response.body()==<span class="keyword">null</span>)&#123;</span><br><span class="line">            Toast.makeText(reference.get(), <span class="string">"返回为空"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="comment">//TODO 其他的一些判断,如登陆或者其他的统一操作</span></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onFailure</span><span class="params">(Call call, Throwable t)</span> </span>&#123;</span><br><span class="line">        Toast.makeText(reference.get(), <span class="string">"网络连接错误"</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>当网络请求失败的时候，我们可以统一的弹窗处理，当用户没登录时，我们可以自己跳到登录页……</p>
+<p><em>以上就是我对网络请求的简单封装，欢迎大家向我吐槽！</em></p>
+
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">donate</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/iconie_alloy">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/ai-er-lan-xue-da">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/3286578617">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/xiaotao.nie.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/AirCloud">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://www.linkedin.com/in/小涛-聂-80964aba">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-linkedin"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'Retrofit的简单封装',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
+
+</html>

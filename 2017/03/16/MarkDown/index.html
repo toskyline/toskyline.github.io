@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="爱电脑，爱游戏，更爱Beautiful Grill！">
+    <meta name="keyword"  content="undefined">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        MarkDown的基本用法 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Nothing Is Impossible! </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>ToSkyline</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#设置头部"><span class="toc-text">设置头部</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Header-2"><span class="toc-text">Header 2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Header-3"><span class="toc-text">Header 3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Header-4"><span class="toc-text">Header 4</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Header-5"><span class="toc-text">Header 5</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#Header-6"><span class="toc-text">Header 6</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#无序列表（注意缩进）"><span class="toc-text">无序列表（注意缩进）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#有序列表"><span class="toc-text">有序列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#效果"><span class="toc-text">效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#引用"><span class="toc-text">引用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#引用效果"><span class="toc-text">引用效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#嵌套列表"><span class="toc-text">嵌套列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#嵌套列表效果"><span class="toc-text">嵌套列表效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文字链接"><span class="toc-text">文字链接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#文字链接效果"><span class="toc-text">文字链接效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#图片链接"><span class="toc-text">图片链接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#图片链接效果"><span class="toc-text">图片链接效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#自动链接"><span class="toc-text">自动链接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#自动链接效果"><span class="toc-text">自动链接效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#代码效果"><span class="toc-text">代码效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#转义字符"><span class="toc-text">转义字符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#转义效果（每个字符前添加-）"><span class="toc-text">转义效果（每个字符前添加\）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#表格"><span class="toc-text">表格</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#表格效果"><span class="toc-text">表格效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#设置字体大小颜色"><span class="toc-text">设置字体大小颜色</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#设置字体大小颜色效果"><span class="toc-text"> 设置字体大小颜色效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#行内标签"><span class="toc-text">行内标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#行内标签效果"><span class="toc-text"> 行内标签效果</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文字加粗"><span class="toc-text">文字加粗</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#文字斜体"><span class="toc-text">文字斜体</span></a></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Nothing Is Impossible! </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        MarkDown的基本用法
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2017-03-16 15:37:33</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#MarkDown" title="MarkDown">MarkDown</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <p>  最近准备弄个自己的博客，记录整理一下自己的学习过程。MarkDown作为一种标记语言，简单易上手，而且比较流行的博客都对MarkDown有很好的支持，所以记录一下MarkDown的简单用户，方便在以后的学习中，能刚快的上手。</p>
+<h1 id="设置头部"><a href="#设置头部" class="headerlink" title="设置头部"></a>设置头部</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Header 1</span></span><br><span class="line"><span class="comment">## Header 2</span></span><br><span class="line"><span class="comment">### Header 3</span></span><br><span class="line"><span class="comment">#### Header 4</span></span><br><span class="line"><span class="comment">##### Header 5</span></span><br><span class="line"><span class="comment">###### Header 6</span></span><br></pre></td></tr></table></figure>
+<font color="#ff0000" size="3">效果</font>
+
+<h2 id="Header-2"><a href="#Header-2" class="headerlink" title="Header 2"></a>Header 2</h2><h3 id="Header-3"><a href="#Header-3" class="headerlink" title="Header 3"></a>Header 3</h3><h4 id="Header-4"><a href="#Header-4" class="headerlink" title="Header 4"></a>Header 4</h4><h5 id="Header-5"><a href="#Header-5" class="headerlink" title="Header 5"></a>Header 5</h5><h6 id="Header-6"><a href="#Header-6" class="headerlink" title="Header 6"></a>Header 6</h6><h1 id="无序列表（注意缩进）"><a href="#无序列表（注意缩进）" class="headerlink" title="无序列表（注意缩进）"></a>无序列表（<font color="#ff0000" size="3">注意缩进</font>）</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*  第一列</span><br><span class="line"> * 第二列</span><br><span class="line"> * 第三列</span><br><span class="line">  * 第四列</span><br></pre></td></tr></table></figure>
+<font color="#ff0000" size="3">效果</font>
+
+<ul>
+<li>第一列</li>
+<li>第二列</li>
+<li>第三列<ul>
+<li>第四列</li>
+</ul>
+</li>
+</ul>
+<h1 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 第一列</span><br><span class="line">2. 第二列</span><br><span class="line">3. 第三列</span><br></pre></td></tr></table></figure>
+<h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a><font color="#ff0000" size="3">效果</font></h3><ol>
+<li>第一列</li>
+<li>第二列</li>
+<li>第三列</li>
+<li>第四列</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 第一列</span><br><span class="line">&gt; 第二列</span><br><span class="line">&gt; 第三列</span><br></pre></td></tr></table></figure>
+<h3 id="引用效果"><a href="#引用效果" class="headerlink" title="引用效果"></a><font color="#ff0000" size="3">引用效果</font></h3><blockquote>
+<p>第一列<br>第二列<br>第三列    </p>
+</blockquote>
+<h1 id="嵌套列表"><a href="#嵌套列表" class="headerlink" title="嵌套列表"></a>嵌套列表</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- 列表1</span><br><span class="line">	+ 列表2</span><br><span class="line">	+ 列表3</span><br><span class="line">		+ 列表8</span><br><span class="line">- 列表4</span><br><span class="line">	+  列表5</span><br><span class="line">	+  列表6</span><br></pre></td></tr></table></figure>
+<h3 id="嵌套列表效果"><a href="#嵌套列表效果" class="headerlink" title="嵌套列表效果"></a><font color="#ff0000" size="3">嵌套列表效果</font></h3><ul>
+<li>列表1<ul>
+<li>列表2</li>
+<li>列表3<ul>
+<li>列表8</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>列表4<ul>
+<li>列表5</li>
+<li>列表6</li>
+</ul>
+</li>
+</ul>
+<h1 id="文字链接"><a href="#文字链接" class="headerlink" title="文字链接"></a>文字链接</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度一下](https://www.baidu.com &quot;百度一下&quot;)</span><br></pre></td></tr></table></figure>
+<h3 id="文字链接效果"><a href="#文字链接效果" class="headerlink" title="文字链接效果"></a><font color="#ff0000" size="3">文字链接效果</font></h3><p><a href="https://www.baidu.com" title="百度一下" target="_blank" rel="noopener">百度一下</a></p>
+<blockquote>
+<p>前面的百度一下表示展示文字<br>后面的百度一下指当鼠标在文字上面的时候显示的内容 </p>
+</blockquote>
+<h1 id="图片链接"><a href="#图片链接" class="headerlink" title="图片链接"></a>图片链接</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![测试](http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png &quot;GitHub Mark&quot;)</span><br></pre></td></tr></table></figure>
+<h3 id="图片链接效果"><a href="#图片链接效果" class="headerlink" title="图片链接效果"></a><font color="#ff0000" size="3">图片链接效果</font></h3><p><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="测试" title="GitHub Mark"></p>
+<blockquote>
+<p>前面的测试指图片的名称<br>后面的github mark指鼠标放在图片上展示的内容</p>
+</blockquote>
+<h1 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;854350705@qq.com&gt;</span><br><span class="line">&lt;https:www.baidu.com&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="自动链接效果"><a href="#自动链接效果" class="headerlink" title="自动链接效果"></a><font color="#ff0000" size="3">自动链接效果</font></h3><p><a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x38;&#53;&#x34;&#51;&#x35;&#48;&#x37;&#x30;&#x35;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#x6d;">&#x38;&#53;&#x34;&#51;&#x35;&#48;&#x37;&#x30;&#x35;&#64;&#x71;&#113;&#x2e;&#x63;&#x6f;&#x6d;</a>    </p>
+<https:www.baidu.com>
+
+
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">用``` ```包裹</span><br><span class="line">或者每行文字4个空格或者1个TAB</span><br></pre></td></tr></table></figure>
+<h3 id="代码效果"><a href="#代码效果" class="headerlink" title="代码效果"></a><font color="#ff0000" size="3">代码效果</font></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String a=<span class="string">"a"</span>;</span><br><span class="line">String b = <span class="string">"b"</span>;</span><br><span class="line">priintln(a+b);</span><br></pre></td></tr></table></figure>
+<pre><code>String a=&quot;a&quot;;
+String a=&quot;a&quot;;
+String a=&quot;a&quot;;
+</code></pre><p>#注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 注释 --&gt;</span><br></pre></td></tr></table></figure>
+<!-- 注释 -->
+<h1 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\\ 反斜杠</span><br><span class="line">\` 反引号</span><br><span class="line">\* 星号</span><br><span class="line">\_ 下划线</span><br><span class="line">\&#123;\&#125; 大括号</span><br><span class="line">\[\] 中括号</span><br><span class="line">\(\) 小括号</span><br><span class="line">\# 井号</span><br><span class="line">\+ 加号</span><br><span class="line">\- 减号</span><br><span class="line">\. 英文句号</span><br><span class="line">\! 感叹号</span><br></pre></td></tr></table></figure>
+<h3 id="转义效果（每个字符前添加-）"><a href="#转义效果（每个字符前添加-）" class="headerlink" title="转义效果（每个字符前添加\）"></a><font color="#ff0000" size="3">转义效果（每个字符前添加\）</font></h3><p>\ 反斜杠</p>
+<p>` 反引号</p>
+<p>* 星号</p>
+<p>_ 下划线</p>
+<p>{} 大括号</p>
+<p>[] 中括号</p>
+<p>() 小括号</p>
+<p># 井号</p>
+<p>+ 加号</p>
+<p>- 减号</p>
+<p>. 英文句号</p>
+<p>! 感叹号</p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 列1        | 列2           |列3 |</span><br><span class="line">| ------------- |:-------------:| -----:|</span><br><span class="line">| col 3 is      | right-aligned | $1600 |</span><br><span class="line">| col 2 is      | centered      |   $12 |</span><br><span class="line">| zebra stripes | are neat      |    $1 |</span><br></pre></td></tr></table></figure>
+<h3 id="表格效果"><a href="#表格效果" class="headerlink" title="表格效果"></a><font color="#ff0000" size="3">表格效果</font></h3><table>
+<thead>
+<tr>
+<th>列1</th>
+<th style="text-align:center">列2</th>
+<th style="text-align:right">列3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<h1 id="设置字体大小颜色"><a href="#设置字体大小颜色" class="headerlink" title="设置字体大小颜色"></a>设置字体大小颜色</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">### &lt;font color=#ff0000 face=&quot;微软雅黑&quot; size=12&gt; 表格效果&lt;/font&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="设置字体大小颜色效果"><a href="#设置字体大小颜色效果" class="headerlink" title=" 设置字体大小颜色效果"></a><font color="#ff0000" face="微软雅黑" size="3"> 设置字体大小颜色效果</font></h3><h1 id="行内标签"><a href="#行内标签" class="headerlink" title="行内标签"></a>行内标签</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">快捷键 `Ctrl + D` 来收藏本页</span><br></pre></td></tr></table></figure>
+<h3 id="行内标签效果"><a href="#行内标签效果" class="headerlink" title=" 行内标签效果"></a><font color="#ff0000" size="3"> 行内标签效果</font></h3><p>快捷键 <code>Ctrl + D</code> 来收藏本页</p>
+<p>#html标签</p>
+<table><br>    <tr><br>        <th rowspan="2">值班人员</th><br>        <th>星期一</th><br>        <th>星期二</th><br>        <th>星期三</th><br>    </tr><br>    <tr><br>        <td>李强</td><br>        <td>张明</td><br>        <td>王平</td><br>    </tr><br></table>
+
+
+
+<p>#参考式链接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">我经常去的几个网站[Google][1]、[Leanote][2]以及[自己的博客][3]</span><br><span class="line">[Leanote 笔记][2]是一个不错的[网站][]。</span><br><span class="line">[1]:http://www.google.com &quot;Google&quot;</span><br><span class="line">[2]:http://www.leanote.com &quot;Leanote&quot;</span><br><span class="line">[3]:http://http://blog.leanote.com/freewalk &quot;梵居闹市&quot;</span><br><span class="line">[网站]:http://http://blog.leanote.com/freewalk</span><br></pre></td></tr></table></figure>
+<p>我经常去的几个网站<a href="http://www.google.com" title="Google" target="_blank" rel="noopener">Google</a>、<a href="http://www.leanote.com" title="Leanote" target="_blank" rel="noopener">Leanote</a>以及<a href="http://http://blog.leanote.com/freewalk" title="梵居闹市" target="_blank" rel="noopener">自己的博客</a><br><a href="http://www.leanote.com" title="Leanote" target="_blank" rel="noopener">Leanote 笔记</a>是一个不错的<a href="http://http://blog.leanote.com/freewalk" target="_blank" rel="noopener">网站</a>。</p>
+<p>#包含段落的列表</p>
+<blockquote>
+<p>必须缩进4个空格或者1个TAB</p>
+</blockquote>
+<p><span id="jump">跳转到这里：</span></p>
+<p><a href="#jump">说明文字</a></p>
+<h1 id="文字加粗"><a href="#文字加粗" class="headerlink" title="文字加粗"></a>文字加粗</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">**加粗内容**</span><br></pre></td></tr></table></figure>
+<p> <strong>加粗内容</strong></p>
+<h1 id="文字斜体"><a href="#文字斜体" class="headerlink" title="文字斜体"></a>文字斜体</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_斜体_</span><br></pre></td></tr></table></figure>
+<p> <em>斜体</em></p>
+</https:www.baidu.com>
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">donate</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/iconie_alloy">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/ai-er-lan-xue-da">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/3286578617">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/xiaotao.nie.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/AirCloud">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://www.linkedin.com/in/小涛-聂-80964aba">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-linkedin"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'MarkDown的基本用法',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
+
+</html>

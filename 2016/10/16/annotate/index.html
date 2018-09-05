@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="爱电脑，爱游戏，更爱Beautiful Grill！">
+    <meta name="keyword"  content="undefined">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        java注解学习笔记 - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> Nothing Is Impossible! </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/avatar.jpg" />
+        </div>
+        <div class="name">
+            <i>ToSkyline</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java基本注解"><span class="toc-text">Java基本注解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常用注解"><span class="toc-text">常用注解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注解分类"><span class="toc-text">注解分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元注解"><span class="toc-text">元注解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义注解的使用"><span class="toc-text">自定义注解的使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#示例"><span class="toc-text">示例</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> Nothing Is Impossible! </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        java注解学习笔记
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2016-10-16 17:11:35</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#Java" title="Java">Java</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#注解" title="注解">注解</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content ">
+        <h1 id="Java基本注解"><a href="#Java基本注解" class="headerlink" title="Java基本注解"></a>Java基本注解</h1><h3 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h3><blockquote>
+<p>@Override 继承父类 </p>
+<p>@Deprecated 方法已经过时 </p>
+<p>@SupperessWarnings(“depresscated) 忽略警告    </p>
+</blockquote>
+<h3 id="注解分类"><a href="#注解分类" class="headerlink" title="注解分类"></a>注解分类</h3><ul>
+<li>1、源码注解 只存在于源码中，编译成.class文件就不存在了。</li>
+<li>2、编译时注解 在源码和.class 文件中存在的注解。</li>
+<li>3、运行时注解 在运行阶段还起作用，甚至会影响运行逻辑。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@Target(&#123;ElementType.METHOD,ElementType.TYPE&#125;)</span><br><span class="line">@Retantion(RetentionPolicy&gt;RUNTIME)</span><br><span class="line">@Inherited</span><br><span class="line">@Documented</span><br><span class="line">  public @interface Description&#123;</span><br><span class="line">    String desc();</span><br><span class="line">    String author();</span><br><span class="line">    int age() default 18;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1、成员类型是受限的，合法的类型包括原始类型及StringClass ,Annotation ,Enumeration。</li>
+<li>2、如果只有一个成员的时候，成员名必须取名为value(),在使用时可以忽略成员名和赋值号（=）。</li>
+<li>3注解类可以没有成员，没有成员的注解叫做标示注解。</li>
+</ul>
+<h3 id="元注解"><a href="#元注解" class="headerlink" title="元注解"></a>元注解</h3><p>@Target 注解作用域</p>
+<pre><code>constructor     构造方法声明
+file        文件声明
+local variable      局部变量声明
+method      方法申明
+package     包申明
+
+parameter   参数申明
+type        类接口
+</code></pre><p>@Retention 生命周期</p>
+<pre><code>source  只在源码中显示，编译时丢弃
+class       编译时会记录到class中，运行时忽略
+runtime 运行时存在，可通过反射获取
+</code></pre><p>@Inherited 允许子类继承<br>@Docunmented 生成javadoc时包含注解的信息</p>
+<h3 id="自定义注解的使用"><a href="#自定义注解的使用" class="headerlink" title="自定义注解的使用"></a>自定义注解的使用</h3><blockquote>
+<p>@&lt;注解名&gt;（&lt;成员名1&gt;=&lt;成员值1&gt;，&lt;成员名2&gt;=&lt;成员值2&gt;，……）</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Description</span>(desc=“I am eyeColor”， author=“Mooc boy” ，age=<span class="number">18</span>) 		</span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">eyeColor</span><span class="params">()</span></span>&#123; </span><br><span class="line">	<span class="keyword">return</span> “red”; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">@Table(&quot;pzh&quot;)</span><br><span class="line">public class User &#123;</span><br><span class="line">    @Column(&quot;name1&quot;)</span><br><span class="line">    private String name;</span><br><span class="line">    @Column(&quot;nickName1&quot;)</span><br><span class="line">    private String nickName;</span><br><span class="line">    @Column(&quot;age1&quot;)</span><br><span class="line">    private int age;</span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return name;</span><br><span class="line">    &#125;</span><br><span class="line">    public void setName(String name) &#123;</span><br><span class="line">        this.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    public String getNickName() &#123;</span><br><span class="line">        return nickName;</span><br><span class="line">    &#125;</span><br><span class="line">    public void setNickName(String nickName) &#123;</span><br><span class="line">        this.nickName = nickName;</span><br><span class="line">    &#125;</span><br><span class="line">    public int getAge() &#123;</span><br><span class="line">        return age;</span><br><span class="line">    &#125;</span><br><span class="line">    public void setAge(int age) &#123;</span><br><span class="line">        this.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">public class Test &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        // TODO Auto-generated method stub</span><br><span class="line">        User user = new User();</span><br><span class="line">        user.setName(&quot;zjp&quot;);</span><br><span class="line">        show(user);</span><br><span class="line">    &#125;</span><br><span class="line">    private static void show(User user) &#123;</span><br><span class="line">        Class class1 = user.getClass();</span><br><span class="line">        boolean isExit = class1.isAnnotationPresent(Table.class);</span><br><span class="line">        if (isExit) &#123;</span><br><span class="line">            Table table = (Table) class1.getAnnotation(Table.class);</span><br><span class="line">            System.out.println(&quot;table value=&quot; + table.value());</span><br><span class="line">        &#125;</span><br><span class="line">        Field[] files = class1.getDeclaredFields();</span><br><span class="line">        for (Field field : files) &#123;</span><br><span class="line">            if (field.isAnnotationPresent(Column.class)) &#123;</span><br><span class="line">                Column column = field.getAnnotation(Column.class);</span><br><span class="line">                System.out.println(&quot;column value=&quot; + column.value());</span><br><span class="line">                System.out.println(&quot;file name=&quot; + field.getName());</span><br><span class="line">                String filedName=field.getName();</span><br><span class="line">                String methodNme=&quot;get&quot;+filedName.substring(0, 1).toUpperCase()+filedName.substring(1);</span><br><span class="line">                try &#123;</span><br><span class="line">                    Method method=class1.getMethod(methodNme);</span><br><span class="line">                    Object fileValue=method.invoke(user,null);</span><br><span class="line">                    System.out.println(&quot;file value=&quot; + fileValue);</span><br><span class="line">                &#125;  catch (Exception e) &#123;</span><br><span class="line">                    // TODO Auto-generated catch block</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+            <div class="donate-container">
+    <div class="donate-button">
+        <button id="donate-button">donate</button>
+    </div>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 感谢鼓励 </p>
+    </div>
+</div>
+        
+        <div id="comment-container">
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/iconie_alloy">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/ai-er-lan-xue-da">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/3286578617">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/xiaotao.nie.5">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/AirCloud">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://www.linkedin.com/in/小涛-聂-80964aba">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-linkedin"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/js/gitment.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'java注解学习笔记',
+        owner: 'aircloud',
+        repo: 'hexo-aircloud-blog',
+        oauth: {
+            client_id: 'your-id-created-by-https://github.com/settings/applications/new',
+            client_secret: 'your-secret-created-by-https://github.com/settings/applications/new',
+        },
+    })
+    gitment.render('comment-container')
+</script>
+
+</html>
